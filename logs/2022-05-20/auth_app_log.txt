@@ -1,0 +1,47 @@
+2022-05-20 14:17:23.570 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 16672 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:17:23.570 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:17:47.887 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 9248 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:17:47.887 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:31:42.786 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 21992 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:31:42.787 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:33:33.800 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 6168 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:33:33.801 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:33:36.557 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.892 seconds (JVM running for 3.527)
+2022-05-20 14:34:23.713 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 21832 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:34:23.713 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:34:26.397 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.842 seconds (JVM running for 3.495)
+2022-05-20 14:37:55.917 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 6740 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:37:55.917 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:40:23.936 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 11892 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 14:40:23.937 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 14:40:26.652 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.848 seconds (JVM running for 3.483)
+2022-05-20 17:31:46.335 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 9056 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:31:46.336 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:31:49.020 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.833 seconds (JVM running for 3.474)
+2022-05-20 17:33:07.221 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 1892 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:33:07.221 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:33:10.024 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.941 seconds (JVM running for 3.595)
+2022-05-20 17:34:43.617 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 13432 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:34:43.618 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:34:46.371 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.896 seconds (JVM running for 3.545)
+2022-05-20 17:36:20.144 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 2616 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:36:20.144 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:36:24.315 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.331 seconds (JVM running for 5.562)
+2022-05-20 17:36:58.185 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 20752 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:36:58.186 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:37:01.551 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 3.514 seconds (JVM running for 4.47)
+2022-05-20 17:40:48.966 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 8884 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:40:48.966 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:40:51.683 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.861 seconds (JVM running for 3.507)
+2022-05-20 17:44:39.562 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 10852 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:44:39.562 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:44:42.387 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.969 seconds (JVM running for 3.625)
+2022-05-20 17:46:31.905 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 15520 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:46:31.906 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:46:34.632 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.872 seconds (JVM running for 3.533)
+2022-05-20 17:47:31.828 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 1240 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:47:31.829 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:47:34.927 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 3.258 seconds (JVM running for 3.946)
+2022-05-20 17:49:52.669 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 8 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-20 17:49:52.669 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-20 17:49:55.349 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.807 seconds (JVM running for 3.445)

@@ -1,0 +1,92 @@
+2022-05-24 16:59:33.308 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 888 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 16:59:33.309 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 16:59:38.200 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 5.167 seconds (JVM running for 11.89)
+2022-05-24 16:59:38.420 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-05-24 16:59:38.420 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_not_be_empty!
+2022-05-24 17:01:33.209 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 20152 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:01:33.210 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:01:37.184 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.172 seconds (JVM running for 5.161)
+2022-05-24 17:01:37.377 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-05-24 17:01:37.377 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_not_be_empty!
+2022-05-24 17:02:47.400 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 2160 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:02:47.403 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:02:54.637 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.453 seconds (JVM running for 8.433)
+2022-05-24 17:02:55.140 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-05-24 17:02:55.291 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-05-24 17:09:46.559 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 20472 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:09:46.560 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:09:50.541 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.226 seconds (JVM running for 5.238)
+2022-05-24 17:09:50.731 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:11:50.302 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 19036 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:11:50.303 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:11:54.243 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.149 seconds (JVM running for 5.136)
+2022-05-24 17:11:54.463 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:12:11.137 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 11508 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:12:11.138 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:12:14.995 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.067 seconds (JVM running for 5.018)
+2022-05-24 17:12:15.237 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:14:10.101 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 9536 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:14:10.102 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:14:13.876 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 3.95 seconds (JVM running for 4.913)
+2022-05-24 17:14:14.080 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:19:45.708 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 7340 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:19:45.709 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:19:53.004 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.513 seconds (JVM running for 8.495)
+2022-05-24 17:19:53.511 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:24:30.578 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 752 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:24:30.579 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:24:34.578 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.219 seconds (JVM running for 5.269)
+2022-05-24 17:24:34.781 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:28:19.675 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 2144 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:28:19.676 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:28:27.036 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.584 seconds (JVM running for 8.736)
+2022-05-24 17:28:27.517 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:34:22.481 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 19784 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:34:22.482 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:34:26.621 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.325 seconds (JVM running for 5.46)
+2022-05-24 17:34:26.808 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:36:18.163 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 6976 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:36:18.164 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:36:24.220 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.317 seconds (JVM running for 7.289)
+2022-05-24 17:36:24.735 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:38:12.586 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 8732 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:38:12.587 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:38:16.470 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.067 seconds (JVM running for 4.993)
+2022-05-24 17:38:16.678 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:39:32.998 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 16960 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:39:32.999 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:39:40.033 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.284 seconds (JVM running for 8.251)
+2022-05-24 17:39:40.498 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:41:17.902 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 1320 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:41:17.902 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:41:22.058 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.376 seconds (JVM running for 5.379)
+2022-05-24 17:41:22.266 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:43:44.336 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 18064 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:43:44.337 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:43:51.274 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.123 seconds (JVM running for 8.054)
+2022-05-24 17:43:51.764 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:46:54.012 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 12596 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:46:54.024 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:47:01.275 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.44 seconds (JVM running for 8.613)
+2022-05-24 17:47:01.784 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:47:24.653 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 12604 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:47:24.654 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:47:28.492 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.067 seconds (JVM running for 5.038)
+2022-05-24 17:47:28.691 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:51:36.339 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 18488 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:51:36.340 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:51:40.153 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.035 seconds (JVM running for 5.028)
+2022-05-24 17:51:40.360 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:52:05.737 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 908 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:52:05.738 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:52:09.583 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.044 seconds (JVM running for 4.983)
+2022-05-24 17:52:09.783 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:52:09.852 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-05-24 17:53:34.608 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 16196 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:53:34.609 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:53:38.868 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.471 seconds (JVM running for 5.464)
+2022-05-24 17:53:39.048 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-05-24 17:53:53.882 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 1596 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-05-24 17:53:53.883 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:53:58.906 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 5.238 seconds (JVM running for 6.237)
+2022-05-24 17:53:59.382 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)

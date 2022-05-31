@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="69fe93a6-cba3-46e7-9c67-448dc11a987a" name="authentication" url="jdbc:sqlserver://localhost;databaseName=users_roles_db" driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+    </data-sources>
+  </component>
+</project>
