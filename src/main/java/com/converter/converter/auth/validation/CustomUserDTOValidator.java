@@ -1,6 +1,6 @@
 package com.converter.converter.auth.validation;
 
-import com.converter.converter.auth.entity.Users;
+import com.converter.converter.auth.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,26 +12,24 @@ import org.springframework.validation.Validator;
 import java.util.StringJoiner;
 
 @Component
-public class CustomUsersValidator implements Validator {
+public class CustomUserDTOValidator implements Validator {
     private final UserService userService;
     private final Logger logger = LoggerFactory.getLogger(CustomUsersValidator.class);
 
-
     @Autowired
-    public CustomUsersValidator(UserService userService) {
+    public CustomUserDTOValidator(UserService userService) {
         this.userService = userService;
-
     }
 
     @Override
-    public boolean supports(Class<?> aClass) {
-        return Users.class.equals(aClass);
+    public boolean supports(Class<?> clazz) {
+        return UserDTO.class.equals(clazz);
     }
 
     @Override
     public void validate(Object target, Errors errors) {
         logger.info("Start user validator");
-        Users user = (Users) target;
+        UserDTO user = (UserDTO) target;
         if (!user.getLogin().isEmpty() && userService.findUserByLogin(user.getLogin()).getLogin().equalsIgnoreCase(user.getLogin())) {
             errors.rejectValue("login", "Not unique user!", "This user exists already!");
             logger.error("This user exists already!");

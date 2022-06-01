@@ -3,22 +3,33 @@ package com.converter.converter.auth.controllers.rest;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
+import com.converter.converter.auth.validation.CustomUserDTOValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @RestController
 @RequestMapping("/api/user")
 public class UserRestController {
     private final UserService userService;
+    private final CustomUserDTOValidator validatorDTO;
 
     @Autowired
-    public UserRestController(UserService userService) {
+    public UserRestController(UserService userService, CustomUserDTOValidator validatorDTO) {
         this.userService = userService;
+        this.validatorDTO = validatorDTO;
+    }
+
+    @InitBinder
+    protected void initBinder(final WebDataBinder webDataBinder) {
+        webDataBinder.addValidators(validatorDTO);
     }
 
     @GetMapping("/{id}")
@@ -28,7 +39,7 @@ public class UserRestController {
     }
 
     @GetMapping
-    public ResponseEntity<List<UserDTO>> findAllUserOrByName(@RequestParam(required = false) String login) {
+    public ResponseEntity<List<UserDTO>> findAllUserOrByLogin(@RequestParam(required = false) String login) {
         List<Users> list = new ArrayList<>();
         List<UserDTO> userDTOList = new ArrayList<>();
         if (login != null) {
@@ -48,7 +59,10 @@ public class UserRestController {
     public ResponseEntity<List<UserDTO>> findUsersByNameAndSurnameAndPatronymic(@RequestParam String name, @RequestParam String surname, @RequestParam String patronymic) {
         List<Users> list = new ArrayList<>();
         List<UserDTO> userDTOList = new ArrayList<>();
-        list = userService.findAll();
+        if (name.isEmpty() || surname.isEmpty() || patronymic.isEmpty()) {
+            return new ResponseEntity<>(userDTOList, HttpStatus.BAD_REQUEST);
+        }
+        list = userService.findUserByNameAndSurnameAndPatronymic(name, surname, patronymic);
         for (Users user : list) {
             UserDTO userDTO = new UserDTO(user);
             userDTOList.add(userDTO);
@@ -56,18 +70,24 @@ public class UserRestController {
         return new ResponseEntity<>(userDTOList, HttpStatus.OK);
     }
 
-    @GetMapping("Email")
+    @GetMapping("/Email")
     public ResponseEntity<UserDTO> findUserByEmail(@RequestParam String email) {
-//        Проверка на соответсвие pattern!
+        String pattern = "\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b";
+        if (Pattern.matches(email, pattern) || email.isEmpty()) {
+            return new ResponseEntity<>(new UserDTO(), HttpStatus.BAD_REQUEST);
+        }
         UserDTO userDTO = new UserDTO(userService.findUserByMail(email));
-        return new ResponseEntity<UserDTO>(userDTO, HttpStatus.OK);
+        return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
     @GetMapping("/Gender")
     public ResponseEntity<List<UserDTO>> findUsersByGender(@RequestParam String gender) {
         List<Users> list = new ArrayList<>();
         List<UserDTO> userDTOList = new ArrayList<>();
-        //        Проверка на соответсвие pattern!
+        String pattern = "(fe)?male";
+        if (Pattern.matches(gender, pattern)) {
+            return new ResponseEntity<List<UserDTO>>(userDTOList, HttpStatus.BAD_REQUEST);
+        }
         list = userService.findUserByGender(gender);
         for (Users user : list) {
             UserDTO userDTO = new UserDTO(user);
@@ -78,16 +98,21 @@ public class UserRestController {
 
     @GetMapping("/Phone")
     public ResponseEntity<UserDTO> findUsersByPhone(@RequestParam String phone) {
-        //        Проверка на соответсвие pattern!
+        String pattern = "^\\d{10}$";
+        if (Pattern.matches(phone, pattern)) {
+            return new ResponseEntity<>(new UserDTO(), HttpStatus.BAD_REQUEST);
+        }
         UserDTO userDTO = new UserDTO(userService.findUserByPhone(phone));
-        return new ResponseEntity<UserDTO>(userDTO, HttpStatus.OK);
+        return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
     @GetMapping("/Age")
     public ResponseEntity<List<UserDTO>> findUsersByAge(@RequestParam Integer age) {
         List<Users> list = new ArrayList<>();
         List<UserDTO> userDTOList = new ArrayList<>();
-        //        Проверка на соответсвие pattern!
+        if (age == 0) {
+            return new ResponseEntity<>(userDTOList, HttpStatus.BAD_REQUEST);
+        }
         list = userService.findUserByAge(age);
         for (Users user : list) {
             UserDTO userDTO = new UserDTO(user);
@@ -97,11 +122,11 @@ public class UserRestController {
     }
 
     @GetMapping("/Enable")
-    public ResponseEntity<List<UserDTO>> findUsersByEnable(@RequestParam boolean enable) {
+    public ResponseEntity<List<UserDTO>> findUsersByEnable(@RequestParam String enable) {
         List<Users> list = new ArrayList<>();
         List<UserDTO> userDTOList = new ArrayList<>();
-        //        Проверка на соответсвие pattern!
-        list = userService.findUserByEnable(enable);
+        boolean flag = enable.equalsIgnoreCase("true");
+        list = userService.findUserByEnable(flag);
         for (Users user : list) {
             UserDTO userDTO = new UserDTO(user);
             userDTOList.add(userDTO);
@@ -109,5 +134,34 @@ public class UserRestController {
         return new ResponseEntity<>(userDTOList, HttpStatus.OK);
     }
 
+    @PostMapping("/Save")
+    public HttpStatus create(@RequestBody UserDTO userDTO, BindingResult bindingResult) {
+        validatorDTO.validate(userDTO, bindingResult);
+        if (bindingResult.hasErrors()) {
+            return HttpStatus.BAD_REQUEST;
+        }
+        Users user = new Users(userDTO);
+        userService.create(user);
+        return HttpStatus.OK;
+    }
 
+    @PutMapping("/Update")
+    public HttpStatus update(@RequestBody UserDTO userDTO, BindingResult bindingResult) {
+        validatorDTO.validate(userDTO, bindingResult);
+        if (bindingResult.hasErrors()) {
+            return HttpStatus.BAD_REQUEST;
+        }
+        Users user = new Users(userDTO);
+        userService.updateUser(user);
+        return HttpStatus.OK;
+    }
+
+    @DeleteMapping("/Delete")
+    public HttpStatus deleteUserByIDAndLogin(@RequestParam Long id, @RequestParam String login) {
+        if (id == null || login.isEmpty()) {
+            return HttpStatus.BAD_REQUEST;
+        }
+        userService.deleteUserByIdAndLogin(id, login);
+        return HttpStatus.OK;
+    }
 }
