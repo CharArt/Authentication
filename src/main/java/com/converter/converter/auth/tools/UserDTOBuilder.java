@@ -9,7 +9,6 @@ import java.sql.Timestamp;
 @Component
 public class UserDTOBuilder {
 
-    private Long id;
     private String login;
     private String name;
     private String surname;
@@ -89,10 +88,6 @@ public class UserDTOBuilder {
     public UserDTO build() {
         UserDTO user = new UserDTO(this);
         return user;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getLogin() {

@@ -43,7 +43,7 @@ public class RegistrationController {
         if (bindingResult.hasErrors()) {
             return "registration";
         }
-//        userService.create(user);
+        userService.create(user);
         return "redirect:/login";
     }
 }

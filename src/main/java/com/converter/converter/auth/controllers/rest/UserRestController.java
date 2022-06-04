@@ -19,17 +19,17 @@ import java.util.regex.Pattern;
 @RequestMapping("/api/user")
 public class UserRestController {
     private final UserService userService;
-    private final CustomUserDTOValidator validatorDTO;
+    private CustomUserDTOValidator validator;
 
     @Autowired
-    public UserRestController(UserService userService, CustomUserDTOValidator validatorDTO) {
+    public UserRestController(UserService userService, CustomUserDTOValidator validator) {
         this.userService = userService;
-        this.validatorDTO = validatorDTO;
+        this.validator = validator;
     }
 
     @InitBinder
-    protected void initBinder(final WebDataBinder webDataBinder) {
-        webDataBinder.addValidators(validatorDTO);
+    protected void initBinder(WebDataBinder webDataBinder) {
+        webDataBinder.addValidators(validator);
     }
 
     @GetMapping("/{id}")
@@ -135,24 +135,20 @@ public class UserRestController {
     }
 
     @PostMapping("/Save")
-    public HttpStatus create(@RequestBody UserDTO userDTO, BindingResult bindingResult) {
-        validatorDTO.validate(userDTO, bindingResult);
-        if (bindingResult.hasErrors()) {
+    public HttpStatus create(@RequestBody UserDTO userDTO, BindingResult result) {
+        validator.validate(userDTO, result);
+        if (result.hasErrors()) {
             return HttpStatus.BAD_REQUEST;
         }
         Users user = new Users(userDTO);
-        userService.create(user);
+        userService.saveNewUser(user);
         return HttpStatus.OK;
     }
 
     @PutMapping("/Update")
-    public HttpStatus update(@RequestBody UserDTO userDTO, BindingResult bindingResult) {
-        validatorDTO.validate(userDTO, bindingResult);
-        if (bindingResult.hasErrors()) {
-            return HttpStatus.BAD_REQUEST;
-        }
+    public HttpStatus update(@RequestBody UserDTO userDTO) {
         Users user = new Users(userDTO);
-        userService.updateUser(user);
+        userService.updateUser(user, userDTO.getId());
         return HttpStatus.OK;
     }
 

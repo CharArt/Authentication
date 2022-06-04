@@ -20,7 +20,6 @@ public class CustomUsersValidator implements Validator {
     @Autowired
     public CustomUsersValidator(UserService userService) {
         this.userService = userService;
-
     }
 
     @Override

@@ -35,7 +35,7 @@ public interface UserService extends UserDetailsService {
 
     void deleteUserByIdAndLogin(Long id, String login);
 
-    void updateUser(Users user);
+    void updateUser(Users user, Long id);
 
     void saveNewUser(Users users);
 }

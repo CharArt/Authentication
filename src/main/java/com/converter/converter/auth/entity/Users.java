@@ -84,7 +84,7 @@ public class Users implements UserDetails {
         this.mail = user.getMail();
         this.birthday = user.getBirthday();
         this.enable = user.getEnable();
-        this.age = (ld.getYear() - birthday.getYear());
+        this.age = (ld.getYear() - birthday.toLocalDate().getYear());
         this.createdDate = Timestamp.valueOf(time);
     }
 

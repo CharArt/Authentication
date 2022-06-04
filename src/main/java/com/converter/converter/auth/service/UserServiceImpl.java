@@ -37,6 +37,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public Users findUserByLogin(String login) {
         logger.info("Start_Method_findUserByLogin(" + login + ")");
+        System.out.println(repository.findUserByLogin(login).stream().findFirst().get().toString());
         return repository.findUserByLogin(login).orElseThrow(EntityNotFoundException::new);
     }
 
@@ -152,9 +153,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUser(Users user) {
+    public void updateUser(Users user, Long id) {
         logger.info("Start_Method_deleteUserByIdAndLogin(user)");
-        repository.updateUserData(user.getId(),
+        repository.updateUserData(id,
                 user.getLogin(),
                 user.getName(),
                 user.getSurname(),

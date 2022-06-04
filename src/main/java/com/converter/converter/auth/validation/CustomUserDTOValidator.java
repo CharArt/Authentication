@@ -30,15 +30,15 @@ public class CustomUserDTOValidator implements Validator {
     public void validate(Object target, Errors errors) {
         logger.info("Start user validator");
         UserDTO user = (UserDTO) target;
-        if (!user.getLogin().isEmpty() && userService.findUserByLogin(user.getLogin()).getLogin().equalsIgnoreCase(user.getLogin())) {
+        if (!user.getLogin().isEmpty() && !userService.findUserByLogin(user.getLogin()).isEmpty() && userService.findUserByLogin(user.getLogin()).getLogin().equalsIgnoreCase(user.getLogin())) {
             errors.rejectValue("login", "Not unique user!", "This user exists already!");
             logger.error("This user exists already!");
         }
-        if (!user.getMail().isEmpty() && userService.findUserByMail(user.getMail()).getMail().equalsIgnoreCase(user.getMail())) {
+        if (!user.getMail().isEmpty() && !userService.findUserByMail(user.getMail()).isEmpty() && userService.findUserByMail(user.getMail()).getMail().equalsIgnoreCase(user.getMail())) {
             errors.rejectValue("mail", "Not unique user!", "This user exists already!");
             logger.error("This user exists already!");
         }
-        if (!user.getPhone().isEmpty() && userService.findUserByPhone(user.getPhone()).getPhone().equalsIgnoreCase(user.getPhone())) {
+        if (!user.getPhone().isEmpty() && !userService.findUserByPhone(user.getPhone()).isEmpty() && userService.findUserByPhone(user.getPhone()).getPhone().equalsIgnoreCase(user.getPhone())) {
             errors.rejectValue("phone", "Not unique user!", "This user exists already!");
             logger.error("This user exists already!");
         }

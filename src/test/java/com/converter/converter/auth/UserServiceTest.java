@@ -161,10 +161,11 @@ public class UserServiceTest {
 
         Users users = service.findUserById(1L);
         users.setRoles(rolesList);
-
-        service.updateUser(users);
+        users.setPhone("00000000000");
+        service.updateUser(users, 1L);
 
         assertEquals(service.findUserById(1L).getRoles().stream().findFirst().get().getRole().toLowerCase(), "user");
+        assertEquals(service.findUserById(1L).getPhone(),"00000000000");
     }
 
     @Test

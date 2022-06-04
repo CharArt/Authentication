@@ -63,7 +63,6 @@ public class UserDTO {
         if (user == null) {
             throw new IllegalArgumentException("User can't been empty!");
         }
-        this.id = user.getId();
         this.login = user.getLogin();
         this.name = user.getName();
         this.surname = user.getSurname();
@@ -75,7 +74,7 @@ public class UserDTO {
         this.birthday = user.getBirthday();
         this.age = user.getAge();
         this.enable = user.isEnable();
-        this.createdDate = getCreatedDate();
+        this.createdDate = user.getCreatedDate();
     }
 
     public UserDTO(Users user) {
@@ -94,7 +93,7 @@ public class UserDTO {
         this.birthday = user.getBirthday();
         this.age = user.getAge();
         this.enable = user.getEnable();
-        this.createdDate = getCreatedDate();
+        this.createdDate = user.getCreatedDate();
     }
 
     public Long getId() {
@@ -176,8 +175,10 @@ public class UserDTO {
     @Override
     public String toString() {
         StringJoiner joiner = new StringJoiner(" ,", "[ ", " ]");
-        joiner.add(id.toString())
-                .add(login)
+        if (id != null){
+            joiner.add(id.toString());
+        }
+        joiner.add(login)
                 .add(name)
                 .add(surname)
                 .add(patronymic)
