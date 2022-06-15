@@ -31,6 +31,8 @@ public interface UserService extends UserDetailsService {
 
     List<Users> findAll();
 
+    Users getLastPerson();
+
     void create(Users user);
 
     void deleteUserByIdAndLogin(Long id, String login);

@@ -37,8 +37,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public Users findUserByLogin(String login) {
         logger.info("Start_Method_findUserByLogin(" + login + ")");
-        System.out.println(repository.findUserByLogin(login).stream().findFirst().get().toString());
-        return repository.findUserByLogin(login).orElseThrow(EntityNotFoundException::new);
+        return repository.findUserByLogin(login).orElse(new Users());
     }
 
     @Override
@@ -121,19 +120,24 @@ public class UserServiceImpl implements UserService {
     @Override
     public Users findUserByMail(String mail) {
         logger.info("Start_Method_findUserByMail(" + mail + ")");
-        return repository.findUserByMail(mail).orElseThrow(EntityNotFoundException::new);
+        return repository.findUserByMail(mail).orElse(new Users());
     }
 
     @Override
     public Users findUserByPhone(String phone) {
         logger.info("Start_Method_findUserByPhone(" + phone + ")");
-        return repository.findUserByPhone(phone).orElseThrow(EntityNotFoundException::new);
+        return repository.findUserByPhone(phone).orElse(new Users());
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) {
         logger.info("Start_Method_loadUserByUsername(" + username + ")");
         return repository.findUserByLogin(username).orElseThrow(EntityNotFoundException::new);
+    }
+
+    @Override
+    public Users getLastPerson() {
+        return repository.lastUser();
     }
 
     @Override

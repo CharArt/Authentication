@@ -45,6 +45,9 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
     @Query(value = "DELETE FROM users WHERE users.id=:id AND users.login=:login", nativeQuery = true)
     void deleteUserByIdAndLogin(@Param("id") Long id, @Param("login") String login);
 
+    @Query(value = "SELECT * FROM users ORDER BY users.id DESC LIMIT 1;", nativeQuery = true)
+    Users lastUser();
+
     @Modifying
     @Query(value = "UPDATE users SET users.login = :login, users.name = :name, users.surname = :surname, users.patronymic = :patronymic, " +
             "users.password = :password, users.gender = :gender, users.phone = :phone, users.mail = :mail, users.birthday = :birthday, " +

@@ -4,6 +4,7 @@ import com.converter.converter.auth.repository.dto.UserDTO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -66,6 +67,7 @@ public class Users implements UserDetails {
     private List<Roles> roles;
 
     public Users(UserDTO user) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSS");
         String time = LocalDateTime.now().format(format);
         LocalDate ld = LocalDate.parse(time, format);
@@ -78,7 +80,7 @@ public class Users implements UserDetails {
         this.name = user.getName();
         this.surname = user.getSurname();
         this.patronymic = user.getPatronymic();
-        this.password = user.getPassword();
+        this.password = encoder.encode(user.getPassword());
         this.gender = user.getGender();
         this.phone = user.getPhone();
         this.mail = user.getMail();
@@ -136,7 +138,8 @@ public class Users implements UserDetails {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+        this.password = encoder.encode(password);
     }
 
     public String getGender() {
@@ -265,6 +268,6 @@ public class Users implements UserDetails {
     }
 
     public boolean isEmpty() {
-        return this.login.isEmpty() || this.name.isEmpty() || this.surname.isEmpty() || this.mail.isEmpty();
+        return this.login == null || this.name == null || this.surname == null || this.mail == null;
     }
 }

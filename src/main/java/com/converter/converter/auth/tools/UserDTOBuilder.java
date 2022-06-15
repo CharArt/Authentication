@@ -1,6 +1,7 @@
 package com.converter.converter.auth.tools;
 
 import com.converter.converter.auth.repository.dto.UserDTO;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
@@ -46,7 +47,8 @@ public class UserDTOBuilder {
     }
 
     public UserDTOBuilder setPassword(String password) {
-        this.password = password;
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+        this.password = encoder.encode(password);
         return this;
     }
 
