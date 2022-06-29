@@ -72,6 +72,8 @@ public class UserServiceTest {
     @Test
     void findUserByIdTest() {
         UserDTO userDTO = new UserDTO(OneUser.getOneUser());
+        UserDTO userDTO1 = new UserDTO(service.findUserById(1L));
+        System.out.println(userDTO1.toString());
         assertEquals(service.findUserById(1L).getId(), userDTO.getId());
     }
 

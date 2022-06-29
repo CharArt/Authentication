@@ -1,5 +1,7 @@
 package com.converter.converter.auth.entity;
 
+import com.converter.converter.auth.repository.dto.RoleDTO;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -39,6 +41,14 @@ public class Roles {
 
     public void setUsers(List<Users> users) {
         this.users = users;
+    }
+
+    public Roles() {
+    }
+
+    public Roles(RoleDTO rDTO) {
+        this.id = rDTO.getId();
+        this.role = rDTO.getRole();
     }
 
     @Override

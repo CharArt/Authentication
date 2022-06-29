@@ -1,0 +1,9 @@
+2022-06-30 00:07:22.901 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 10492 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-06-30 00:07:22.902 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-30 00:07:26.567 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.005 seconds (JVM running for 4.475)
+2022-06-30 00:07:29.019 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(21, Test2)
+2022-06-30 00:07:29.089 [http-nio-8080-exec-1] ERROR c.converter.converter.auth.service.UserServiceImpl - This_user_does_not_exist_or_has_been_deleted 
+2022-06-30 00:15:54.628 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 5116 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-06-30 00:15:54.650 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-30 00:15:58.763 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.481 seconds (JVM running for 4.964)
+2022-06-30 00:16:02.962 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(21)

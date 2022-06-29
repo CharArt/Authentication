@@ -17,12 +17,10 @@ import org.springframework.security.web.SecurityFilterChain;
 @ComponentScan("com.converter.converter.auth")
 public class SecurityConfig {
 
-    private final UserService userService;
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
 
     @Autowired
-    public SecurityConfig(UserService userService, MyBasicAuthEntityPoint myBasicAuthEntityPoint) {
-        this.userService = userService;
+    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntityPoint) {
         this.myBasicAuthEntryPoint = myBasicAuthEntityPoint;
     }
 
@@ -33,20 +31,20 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/oauth2/**").permitAll()
                 .mvcMatchers("/home").permitAll()
-                .mvcMatchers("/api/user/").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/NSP").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Email").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Gender").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Phone").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Age").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Enable").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Save").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Update").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/api/user/Delete").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/{id}").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/NSP").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Email").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Gender").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Phone").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Age").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Enable").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Save").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Update").hasAnyAuthority("ROLE_USER")
+//                .mvcMatchers("/api/user/Delete").hasAnyAuthority("ROLE_USER")
                 .mvcMatchers("/hello").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                 .mvcMatchers("/history").hasAnyAuthority("ROLE_USER")
                 .mvcMatchers("/converter").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
-//                .anyRequest().authenticated()
                 .and()
                 .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
                 .and()
@@ -62,7 +60,6 @@ public class SecurityConfig {
                 .and()
                 .logout().permitAll()
                 .logoutSuccessUrl("/login");
-
         return https.build();
     }
 

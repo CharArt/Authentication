@@ -1,11 +1,13 @@
 package com.converter.converter.auth.tools;
 
+import com.converter.converter.auth.repository.dto.RoleDTO;
 import com.converter.converter.auth.repository.dto.UserDTO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Component
 public class UserDTOBuilder {
@@ -22,6 +24,7 @@ public class UserDTOBuilder {
     private int age;
     private boolean enable;
     private Timestamp createdDate;
+    private List<RoleDTO> roles;
 
     public UserDTOBuilder() {
     }
@@ -87,6 +90,11 @@ public class UserDTOBuilder {
         return this;
     }
 
+    public UserDTOBuilder setRoles(List<RoleDTO> roles) {
+        this.roles = roles;
+        return this;
+    }
+
     public UserDTO build() {
         UserDTO user = new UserDTO(this);
         return user;
@@ -138,5 +146,9 @@ public class UserDTOBuilder {
 
     public Timestamp getCreatedDate() {
         return createdDate;
+    }
+
+    public List<RoleDTO> getRoles() {
+        return roles;
     }
 }

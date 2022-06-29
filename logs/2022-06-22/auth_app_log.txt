@@ -1,0 +1,93 @@
+2022-06-22 16:10:38.080 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18132 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:10:38.081 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:10:42.065 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.262 seconds (JVM running for 4.911)
+2022-06-22 16:10:52.236 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:32:09.222 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18752 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:32:09.222 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:32:11.858 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.875 seconds (JVM running for 3.214)
+2022-06-22 16:32:39.807 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:34:10.843 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 19928 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:34:10.843 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:34:13.656 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.981 seconds (JVM running for 4.209)
+2022-06-22 16:34:14.056 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:37:13.929 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 22856 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:37:13.929 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:37:16.677 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.88 seconds (JVM running for 3.529)
+2022-06-22 16:37:17.034 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:38:33.609 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 15128 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:38:33.609 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:38:36.388 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.921 seconds (JVM running for 3.566)
+2022-06-22 16:38:36.755 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:39:10.716 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 22532 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:39:10.717 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:39:13.351 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.877 seconds (JVM running for 3.233)
+2022-06-22 16:39:17.370 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:59:26.962 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 6972 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 16:59:26.996 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:59:29.902 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 3.108 seconds (JVM running for 3.84)
+2022-06-22 16:59:30.262 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 16:59:30.321 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:03:03.895 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 22672 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:03:03.896 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:03:06.638 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.876 seconds (JVM running for 3.537)
+2022-06-22 17:03:07.004 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:03:07.065 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:03:41.889 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on kftnb-77 with PID 22628 (started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:03:41.890 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:03:44.696 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 2.939 seconds (JVM running for 3.589)
+2022-06-22 17:03:45.085 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:03:45.148 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:03:48.627 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16836 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:03:48.628 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:03:51.351 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.997 seconds (JVM running for 3.335)
+2022-06-22 17:04:44.625 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:05:02.560 [http-nio-8080-exec-4] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:05:29.401 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 21248 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:05:29.401 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:05:32.062 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.881 seconds (JVM running for 3.221)
+2022-06-22 17:05:33.338 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:11:11.040 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18216 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:11:11.044 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:11:13.605 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.78 seconds (JVM running for 3.116)
+2022-06-22 17:11:16.428 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:12:48.229 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20128 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:12:48.229 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:12:50.846 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.829 seconds (JVM running for 3.161)
+2022-06-22 17:12:53.329 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:12:53.429 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:15:55.223 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 8028 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:15:55.224 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:15:57.994 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.984 seconds (JVM running for 3.316)
+2022-06-22 17:15:59.166 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:17:09.933 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 19408 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:17:09.934 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:17:12.565 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.846 seconds (JVM running for 3.176)
+2022-06-22 17:17:18.108 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:17:18.209 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:45:00.021 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 6044 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:45:00.022 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:45:02.906 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.107 seconds (JVM running for 3.451)
+2022-06-22 17:45:06.390 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:46:46.849 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 22184 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:46:46.849 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:46:49.454 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.827 seconds (JVM running for 3.157)
+2022-06-22 17:46:51.064 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:48:51.355 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 5768 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:48:51.356 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:48:54.022 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.885 seconds (JVM running for 3.229)
+2022-06-22 17:48:56.167 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:50:34.835 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 5416 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:50:34.836 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:50:37.455 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.829 seconds (JVM running for 3.175)
+2022-06-22 17:50:39.776 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-06-22 17:55:41.589 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 11868 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 17:55:41.590 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:55:44.246 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.891 seconds (JVM running for 3.23)
+2022-06-22 17:56:30.195 [http-nio-8080-exec-4] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-06-22 17:57:51.642 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(KenElenaVal)
+2022-06-22 17:58:44.076 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-06-22 17:58:58.144 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-06-22 18:00:32.871 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 1552 (D:\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in D:\Project_on_Java\Microservice\authentication)
+2022-06-22 18:00:32.872 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 18:00:35.557 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 2.919 seconds (JVM running for 3.268)
+2022-06-22 18:00:37.590 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)

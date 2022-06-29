@@ -40,4 +40,6 @@ public interface UserService extends UserDetailsService {
     void updateUser(Users user, Long id);
 
     void saveNewUser(Users users);
+
+    void saveRoleForUser(Users users);
 }

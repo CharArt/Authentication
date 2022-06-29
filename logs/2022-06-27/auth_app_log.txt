@@ -1,0 +1,10 @@
+2022-06-27 00:09:00.684 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 11868 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-06-27 00:09:00.685 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-27 00:09:05.434 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.119 seconds (JVM running for 5.882)
+2022-06-27 00:25:55.667 [http-nio-8080-exec-7] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-06-27 00:25:55.698 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test1)
+2022-06-27 00:28:48.679 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(Test1)
+2022-06-27 00:31:19.474 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(Test1)
+2022-06-27 00:33:12.543 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-06-27 00:39:20.512 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-06-27 00:39:28.207 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(Test1)

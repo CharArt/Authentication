@@ -1,7 +1,10 @@
 package com.converter.converter.auth.service;
 
+import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
+import com.converter.converter.auth.repository.RolesRepository;
 import com.converter.converter.auth.repository.UsersRepository;
+import com.converter.converter.auth.repository.dto.RoleDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,18 +23,20 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UsersRepository repository;
+    private final RolesRepository rolesRepository;
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
-    public UserServiceImpl(UsersRepository repository) {
+    public UserServiceImpl(UsersRepository repository, RolesRepository rolesRepository) {
         this.repository = repository;
+        this.rolesRepository = rolesRepository;
     }
 
     @Override
     public Users findUserById(Long userId) {
         logger.info("Start_Method_findUserById(" + userId + ")");
-        return repository.findById(userId).orElseThrow(EntityNotFoundException::new);
+        return repository.findUserById(userId).orElseThrow(EntityNotFoundException::new);
     }
 
     @Override
@@ -144,7 +149,7 @@ public class UserServiceImpl implements UserService {
     public void create(Users user) {
         logger.info("Start_Method_create");
         if (user.isEmpty()) {
-            logger.error("Exception_user_not_be_empty!");
+            logger.error("Exception_user_does_not_be_empty!");
             throw new EntityExistsException();
         }
         repository.save(user);
@@ -153,6 +158,14 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUserByIdAndLogin(Long id, String login) {
         logger.info("Start_Method_deleteUserByIdAndLogin(" + id + ", " + login + ")");
+        if (repository.findUserById(id).isEmpty()) {
+            logger.error("This_user_does_not_exist_or_has_been_deleted ");
+            throw new EntityNotFoundException("User with id:" + id + " not found");
+        }
+        if (repository.findUserByLogin(login).isEmpty()) {
+            logger.error("This_user_does_not_exist_or_has_been_deleted ");
+            throw new EntityNotFoundException("User with login:" + login + " not found");
+        }
         repository.deleteUserByIdAndLogin(id, login);
     }
 
@@ -189,5 +202,24 @@ public class UserServiceImpl implements UserService {
                 user.getAge(),
                 user.getEnable(),
                 user.getCreatedDate());
+    }
+
+    @Override
+    public void saveRoleForUser(Users user) {
+        List<Users> list = repository.findUserByNameAndSurnameAndPatronymic(user.getName(), user.getSurname(), user.getPatronymic());
+        Users targetUser = new Users();
+        for (Users users : list) {
+            if (users.getMail().equals(user.getMail())) {
+                targetUser = users;
+            }
+        }
+        if (user.getRoles().size() == 0) {
+            Roles defaultRole = rolesRepository.findByRoleName("USER");
+            repository.saveRoleForUser(targetUser.getId(), defaultRole.getId());
+        } else {
+            for (Roles role : user.getRoles()) {
+                repository.saveRoleForUser(targetUser.getId(), role.getId());
+            }
+        }
     }
 }

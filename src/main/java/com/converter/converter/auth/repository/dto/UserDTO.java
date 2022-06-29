@@ -1,5 +1,6 @@
 package com.converter.converter.auth.repository.dto;
 
+import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.tools.UserDTOBuilder;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
 
@@ -56,6 +59,8 @@ public class UserDTO {
 
     private Timestamp createdDate;
 
+    private List<RoleDTO> roles;
+
     public UserDTO() {
     }
 
@@ -75,6 +80,7 @@ public class UserDTO {
         this.age = user.getAge();
         this.enable = user.isEnable();
         this.createdDate = user.getCreatedDate();
+        this.roles = user.getRoles();
     }
 
     public UserDTO(Users user) {
@@ -94,6 +100,12 @@ public class UserDTO {
         this.age = user.getAge();
         this.enable = user.getEnable();
         this.createdDate = user.getCreatedDate();
+        List<RoleDTO> listRoles = new ArrayList<>();
+        for (Roles rol : user.getRoles()) {
+            RoleDTO r = new RoleDTO(rol);
+            listRoles.add(r);
+        }
+        this.roles = listRoles;
     }
 
     public Long getId() {
@@ -148,6 +160,10 @@ public class UserDTO {
         return createdDate;
     }
 
+    public List<RoleDTO> getRoles() {
+        return roles;
+    }
+
     @Override
     public int hashCode() {
         int result = 0;
@@ -175,7 +191,7 @@ public class UserDTO {
     @Override
     public String toString() {
         StringJoiner joiner = new StringJoiner(" ,", "[ ", " ]");
-        if (id != null){
+        if (id != null) {
             joiner.add(id.toString());
         }
         joiner.add(login)
@@ -189,6 +205,10 @@ public class UserDTO {
                 .add(Integer.toString(age))
                 .add(enable.toString())
                 .add(createdDate.toString());
+        for (RoleDTO role : roles) {
+            joiner.add(role.getId().toString())
+                    .add(role.getRole());
+        }
         return joiner.toString();
     }
 

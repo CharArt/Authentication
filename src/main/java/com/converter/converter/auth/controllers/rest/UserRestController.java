@@ -142,6 +142,7 @@ public class UserRestController {
         }
         Users user = new Users(userDTO);
         userService.saveNewUser(user);
+        userService.saveRoleForUser(user);
         return HttpStatus.OK;
     }
 
@@ -158,6 +159,12 @@ public class UserRestController {
     @DeleteMapping("/Delete")
     public HttpStatus deleteUserByIDAndLogin(@RequestParam Long id, @RequestParam String login) {
         if (id == null || login.isEmpty()) {
+            return HttpStatus.BAD_REQUEST;
+        }
+        if (userService.findUserByLogin(login).isEmpty()) {
+            return HttpStatus.BAD_REQUEST;
+        }
+        if (userService.findUserById(id).isEmpty()) {
             return HttpStatus.BAD_REQUEST;
         }
         userService.deleteUserByIdAndLogin(id, login);

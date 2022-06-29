@@ -1,6 +1,9 @@
 package com.converter.converter.auth.entity;
 
+import com.converter.converter.auth.repository.RolesRepository;
+import com.converter.converter.auth.repository.dto.RoleDTO;
 import com.converter.converter.auth.repository.dto.UserDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,6 +15,7 @@ import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -71,11 +75,10 @@ public class Users implements UserDetails {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSS");
         String time = LocalDateTime.now().format(format);
         LocalDate ld = LocalDate.parse(time, format);
-
+        List<Roles> listRoles = new ArrayList<>();
         if (user == null) {
             throw new IllegalArgumentException("User can't been empty!");
         }
-
         this.login = user.getLogin();
         this.name = user.getName();
         this.surname = user.getSurname();
@@ -88,6 +91,7 @@ public class Users implements UserDetails {
         this.enable = user.getEnable();
         this.age = (ld.getYear() - birthday.toLocalDate().getYear());
         this.createdDate = Timestamp.valueOf(time);
+        this.roles = listRoles;
     }
 
     public Users() {
