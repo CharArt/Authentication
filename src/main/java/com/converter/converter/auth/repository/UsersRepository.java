@@ -6,10 +6,12 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import javax.transaction.Transactional;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
+
 
 public interface UsersRepository extends JpaRepository<Users, Long> {
 
@@ -77,15 +79,14 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
     @Query(value = "DELETE FROM users WHERE users.id=:id AND users.login=:login", nativeQuery = true)
     void deleteUserByIdAndLogin(@Param("id") Long id, @Param("login") String login);
 
-    @Query(value = "SELECT * FROM users ORDER BY users.id DESC LIMIT 1;", nativeQuery = true)
+    @Query(value = "SELECT TOP 1 * FROM users ORDER BY users.id DESC;", nativeQuery = true)
     Users lastUser();
 
     @Modifying
-    @Query(value = "UPDATE users SET users.login = :login, users.name = :name, users.surname = :surname, users.patronymic = :patronymic, " +
-            "users.password = :password, users.gender = :gender, users.phone = :phone, users.mail = :mail, users.birthday = :birthday, " +
-            "users.age = :age, users.enable = :enable, users.created = :createdDate WHERE users.id = :id;", nativeQuery = true)
-    void updateUserData(@Param("id") Long id,
-                        @Param("login") String login,
+    @Query(value = "UPDATE dbo.users SET users.login = :login, users.name = :name, users.surname = :surname, users.patronymic = :patronymic," +
+            " users.password = :password, users.gender = :gender, users.phone = :phone, users.mail = :mail, users.birthday = :birthday," +
+            " users.age = :age, users.enable = :enable, users.created = :createdDate WHERE users.id = :id ;", nativeQuery = true)
+    void updateUserData(@Param("login") String login,
                         @Param("name") String name,
                         @Param("surname") String surname,
                         @Param("patronymic") String patronymic,
@@ -96,7 +97,8 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
                         @Param("birthday") Date birthday,
                         @Param("age") int age,
                         @Param("enable") boolean enable,
-                        @Param("createdDate") Timestamp createdDate);
+                        @Param("createdDate") Timestamp createdDate,
+                        @Param("id") Long id);
 
     @Modifying
     @Query(value = "INSERT INTO users (users.login, users.name, users.surname, users.patronymic, users.password, " +

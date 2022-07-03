@@ -4,7 +4,7 @@ import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.repository.RolesRepository;
 import com.converter.converter.auth.repository.UsersRepository;
-import com.converter.converter.auth.repository.dto.RoleDTO;
+import com.converter.converter.auth.repository.dto.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -170,10 +170,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUser(Users user, Long id) {
+    public void updateUser(Users user) {
         logger.info("Start_Method_deleteUserByIdAndLogin(user)");
-        repository.updateUserData(id,
-                user.getLogin(),
+        repository.updateUserData(user.getLogin(),
                 user.getName(),
                 user.getSurname(),
                 user.getPatronymic(),
@@ -184,7 +183,8 @@ public class UserServiceImpl implements UserService {
                 user.getBirthday(),
                 user.getAge(),
                 user.getEnable(),
-                user.getCreatedDate());
+                user.getCreatedDate(),
+                user.getId());
     }
 
     @Override

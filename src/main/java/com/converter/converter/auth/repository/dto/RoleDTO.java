@@ -6,6 +6,9 @@ public class RoleDTO {
     private Long id;
     private String role;
 
+    public RoleDTO() {
+    }
+
     public RoleDTO(Roles roles) {
         this.id = roles.getId();
         this.role = roles.getRole();

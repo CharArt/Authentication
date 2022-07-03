@@ -1,27 +1,51 @@
 package com.converter.converter.auth.configuration;
 
+import com.converter.converter.auth.oauth.CustomOAuth2User;
+import com.converter.converter.auth.oauth.CustomOAuth2UserService;
 import com.converter.converter.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+
+import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
-@Configuration
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @ComponentScan("com.converter.converter.auth")
 public class SecurityConfig {
-
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
+    private final UserService userService;
+    private final CustomOAuth2UserService oAuth2UserService;
 
     @Autowired
-    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntityPoint) {
-        this.myBasicAuthEntryPoint = myBasicAuthEntityPoint;
+    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint, UserService userService, CustomOAuth2UserService oAuth2UserService) {
+        this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
+        this.userService = userService;
+        this.oAuth2UserService = oAuth2UserService;
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder(12);
     }
 
     @Bean
@@ -29,42 +53,42 @@ public class SecurityConfig {
         https
                 .csrf().disable()
                 .authorizeRequests()
+                .antMatchers("/hello").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/oauth2/**").permitAll()
-                .mvcMatchers("/home").permitAll()
-//                .mvcMatchers("/api/user/").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/{id}").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/NSP").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Email").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Gender").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Phone").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Age").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Enable").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Save").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Update").hasAnyAuthority("ROLE_USER")
-//                .mvcMatchers("/api/user/Delete").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/hello").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
-                .mvcMatchers("/history").hasAnyAuthority("ROLE_USER")
-                .mvcMatchers("/converter").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+                .antMatchers("/home").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/user/").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/NSP").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Email").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Gender").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Phone").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Age").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Enable").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/api/user/Save").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/api/user/Update").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/api/user/Delete").hasAnyRole("ADMIN")
                 .and()
                 .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
                 .and()
-                .formLogin()
-                .loginPage("/login")
+                .formLogin().loginPage("/login")
                 .defaultSuccessUrl("/hello", true)
                 .failureForwardUrl("/login").permitAll()
                 .and()
                 .oauth2Login()
                 .loginPage("/login")
-                .defaultSuccessUrl("/hello", true)
+                .userInfoEndpoint().userService(oAuth2UserService)
+                .and()
                 .failureUrl("/login").permitAll()
+                .successHandler(new AuthenticationSuccessHandler() {
+                    @Override
+                    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+                        CustomOAuth2User oAuth2User = (CustomOAuth2User) authentication.getPrincipal();
+                        response.sendRedirect("/hello");
+                    }
+                })
                 .and()
                 .logout().permitAll()
                 .logoutSuccessUrl("/login");
         return https.build();
-    }
-
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder(12);
     }
 }

@@ -1,9 +1,7 @@
 package com.converter.converter.auth.entity;
 
-import com.converter.converter.auth.repository.RolesRepository;
 import com.converter.converter.auth.repository.dto.RoleDTO;
 import com.converter.converter.auth.repository.dto.UserDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -23,8 +21,6 @@ import java.util.stream.Collectors;
 @Entity
 @Table(name = "users")
 public class Users implements UserDetails {
-    private static final String ROLE = "ROLE_";
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -76,8 +72,8 @@ public class Users implements UserDetails {
         String time = LocalDateTime.now().format(format);
         LocalDate ld = LocalDate.parse(time, format);
         List<Roles> listRoles = new ArrayList<>();
-        if (user == null) {
-            throw new IllegalArgumentException("User can't been empty!");
+        for (RoleDTO r : user.getRoles()) {
+            listRoles.add(new Roles(r));
         }
         this.login = user.getLogin();
         this.name = user.getName();
@@ -213,10 +209,12 @@ public class Users implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+
         return getRoles()
                 .stream()
                 .map(roles1 -> {
-                    return new SimpleGrantedAuthority(ROLE + roles1.toString());
+                    SimpleGrantedAuthority SGA = new SimpleGrantedAuthority("ROLE_" + roles1.getRole());
+                    return SGA;
                 }).collect(Collectors.toList());
     }
 

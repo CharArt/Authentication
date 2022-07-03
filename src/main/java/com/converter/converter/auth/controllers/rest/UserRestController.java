@@ -148,11 +148,9 @@ public class UserRestController {
 
     @PutMapping("/Update")
     public HttpStatus update(@RequestBody UserDTO userDTO) {
-        if (userDTO.getId().equals(userService.getLastPerson().getId())) {
-            return HttpStatus.BAD_REQUEST;
-        }
         Users user = new Users(userDTO);
-        userService.updateUser(user, userDTO.getId());
+        user.setId(userDTO.getId());
+        userService.updateUser(user);
         return HttpStatus.OK;
     }
 

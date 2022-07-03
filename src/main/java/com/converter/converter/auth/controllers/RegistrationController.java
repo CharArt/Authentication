@@ -4,6 +4,7 @@ import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.validation.CustomUsersValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -13,11 +14,14 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 @Controller
 public class RegistrationController {
-    private UserService userService;
-    private CustomUsersValidator myCustomUserValidation;
+    private final UserService userService;
+    private final CustomUsersValidator myCustomUserValidation;
 
     @Autowired
     public RegistrationController(UserService userService, CustomUsersValidator myCustomUserValidation) {
@@ -31,9 +35,12 @@ public class RegistrationController {
     }
 
     @GetMapping("/registration")
-    public String FrontPage(ModelMap modelMap) {
+    public String FrontPage(ModelMap modelMap, OAuth2AuthenticationToken auth) {
         Users newUser = new Users();
+        Map<String, String> clientUrls = new HashMap<>();
+        clientUrls.put("Google", "http://localhost:8080/oauth2/authorization/google");
         modelMap.addAttribute("user", newUser);
+        modelMap.addAttribute("clientUrls", clientUrls);
         return "registration";
     }
 
@@ -46,4 +53,5 @@ public class RegistrationController {
         userService.create(user);
         return "redirect:/login";
     }
+
 }
