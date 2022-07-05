@@ -1,5 +1,6 @@
-package com.converter.converter.auth.oauth;
+package com.converter.converter.auth.service;
 
+import com.converter.converter.auth.repository.dto.CustomOAuth2User;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
@@ -13,5 +14,4 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         OAuth2User oAuth2User = super.loadUser(userRequest);
         return new CustomOAuth2User(oAuth2User);
     }
-
 }

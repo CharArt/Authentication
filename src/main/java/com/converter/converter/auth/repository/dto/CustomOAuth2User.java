@@ -1,4 +1,4 @@
-package com.converter.converter.auth.oauth;
+package com.converter.converter.auth.repository.dto;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;

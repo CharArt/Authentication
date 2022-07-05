@@ -1,7 +1,7 @@
 package com.converter.converter.auth.configuration;
 
-import com.converter.converter.auth.oauth.CustomOAuth2User;
-import com.converter.converter.auth.oauth.CustomOAuth2UserService;
+import com.converter.converter.auth.repository.dto.CustomOAuth2User;
+import com.converter.converter.auth.service.CustomOAuth2UserService;
 import com.converter.converter.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -29,13 +29,14 @@ import java.io.IOException;
 public class SecurityConfig {
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
     private final UserService userService;
-    private final CustomOAuth2UserService oAuth2UserService;
+
+    private final CustomOAuth2UserService customOAuth2UserService;
 
     @Autowired
-    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint, UserService userService, CustomOAuth2UserService oAuth2UserService) {
+    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint, UserService userService, CustomOAuth2UserService customOAuth2UserService) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.userService = userService;
-        this.oAuth2UserService = oAuth2UserService;
+        this.customOAuth2UserService = customOAuth2UserService;
     }
 
     @Bean
@@ -76,7 +77,7 @@ public class SecurityConfig {
                 .and()
                 .oauth2Login()
                 .loginPage("/login")
-                .userInfoEndpoint().userService(oAuth2UserService)
+                .userInfoEndpoint().userService(customOAuth2UserService)
                 .and()
                 .failureUrl("/login").permitAll()
                 .successHandler(new AuthenticationSuccessHandler() {
@@ -88,6 +89,9 @@ public class SecurityConfig {
                 })
                 .and()
                 .logout().permitAll()
+                .invalidateHttpSession(true)
+                .clearAuthentication(true)
+                .deleteCookies("JSESSIONID")
                 .logoutSuccessUrl("/login");
         return https.build();
     }
