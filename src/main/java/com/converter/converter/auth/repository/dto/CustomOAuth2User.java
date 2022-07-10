@@ -1,5 +1,6 @@
 package com.converter.converter.auth.repository.dto;
 
+import com.converter.converter.auth.entity.GoogleUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 

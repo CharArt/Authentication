@@ -2,6 +2,7 @@ package com.converter.converter.auth;
 
 import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
+import com.converter.converter.auth.repository.dto.RoleDTO;
 import com.converter.converter.auth.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.tools.UserDTOBuilder;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.time.LocalDate;
@@ -18,8 +20,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
@@ -36,7 +37,7 @@ public class UserServiceTest {
         public static Users getOneUser() {
             DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSSSSS");
             String dateTime1 = "2022-03-28 21:53:08.1866666";
-            String dateTime2 = "2022-03-28 14:04:48.4533333";
+            String dateTime2 = "2022-07-07 00:20:39.1966667";
             LocalDate ld1 = LocalDate.parse(dateTime1, format);
             LocalDateTime ldt1 = LocalDateTime.parse(dateTime1, format);
             LocalDate ld2 = LocalDate.parse(dateTime2, format);
@@ -84,12 +85,17 @@ public class UserServiceTest {
 
     @Test
     void findUserByNameAndSurnameAndPatronymicTest() {
-        assertEquals(service.findUserByNameAndSurnameAndPatronymic("Artem", "Charykov", "Pavlovich").stream().findFirst().get().getId(), 1L);
+        List<Users> usersList = service.findUserByNameAndSurnameAndPatronymic("Artoym", "Charykov", "Pavlovich");
+        for (Users users : usersList) {
+            if (users.getId().equals(1L)) {
+                assertEquals(users.getId(), 1L);
+            }
+        }
     }
 
     @Test
     void findUserByMailTest() {
-        assertEquals(service.findUserByMail("ArtPavChar@gmail.com").getLogin(), "CharArtPav");
+        assertEquals(service.findUserByMail("charartpav@gmail.com").getLogin(), "CharArtPav");
     }
 
     @Test
@@ -109,23 +115,33 @@ public class UserServiceTest {
 
     @Test
     void findUserByEnableTest() {
-        assertTrue(service.findUserByEnable(true).stream().findFirst().get().getEnable());
+        List<Users> usersList = service.findUserByEnable(true);
+        for (Users users : usersList) {
+            if (users.isEnabled()) {
+                assertTrue(users.isEnabled());
+            }
+        }
     }
 
     @Test
     void findUserByCreatedTest() {
-        assertEquals(service.findUserByCreated(OneUser.getOneUser().getCreatedDate()).stream().findFirst().get().getCreatedDate(), OneUser.getOneUser().getCreatedDate());
+        List<Users> usersList = service.findUserByCreated(OneUser.getOneUser().getCreatedDate());
+        for (Users users : usersList) {
+            if (users.getCreatedDate().equals(OneUser.getOneUser().getCreatedDate())) {
+                assertEquals(users.getCreatedDate(), OneUser.getOneUser().getCreatedDate());
+            }
+        }
     }
 
     @Test
     void findAllTest() {
-        assertEquals(service.findAll().size(), 11);
+        assertEquals(service.findAll().size(), 10);
     }
 
     @Test
     void createTest() {
-        List<Roles> rolesList = new ArrayList<>();
-        Roles roles = new Roles();
+        List<RoleDTO> rolesList = new ArrayList<>();
+        RoleDTO roles = new RoleDTO();
         roles.setRole("ADMIN");
         roles.setId(1L);
         rolesList.add(roles);
@@ -139,17 +155,19 @@ public class UserServiceTest {
         builder.setMail("Test2");
         builder.setPhone("89018591235");
         builder.setBirthday(Date.valueOf("1993-02-16"));
+        builder.setRoles(rolesList);
         UserDTO userDTO = builder.build();
         Users user = new Users(userDTO);
-        user.setRoles(rolesList);
         service.create(user);
-        assertEquals(service.findAll().size(), 12);
+        assertEquals(service.findUserByLogin(user.getLogin()).getLogin(), user.getLogin());
     }
 
     @Test
     void deleteUserByIdAndLoginTest() {
         service.deleteUserByIdAndLogin(1L, "CharArtPav");
-        assertEquals(service.findAll().size(), 10);
+        assertThrows(EntityNotFoundException.class, () -> {
+            service.findUserById(1L);
+        });
     }
 
 
@@ -167,13 +185,13 @@ public class UserServiceTest {
         service.updateUser(users);
 
         assertEquals(service.findUserById(1L).getRoles().stream().findFirst().get().getRole().toLowerCase(), "user");
-        assertEquals(service.findUserById(1L).getPhone(),"00000000000");
+        assertEquals(service.findUserById(1L).getPhone(), "00000000000");
     }
 
     @Test
-    void saveNewUserTest () {
-        List<Roles> rolesList = new ArrayList<>();
-        Roles roles = new Roles();
+    void saveNewUserTest() {
+        List<RoleDTO> rolesList = new ArrayList<>();
+        RoleDTO roles = new RoleDTO();
         roles.setRole("ADMIN");
         roles.setId(1L);
         rolesList.add(roles);
@@ -187,10 +205,10 @@ public class UserServiceTest {
         builder.setMail("Test2");
         builder.setPhone("89018591235");
         builder.setBirthday(Date.valueOf("1993-02-16"));
+        builder.setRoles(rolesList);
         UserDTO userDTO = builder.build();
         Users user = new Users(userDTO);
-        user.setRoles(rolesList);
         service.saveNewUser(user);
-        assertEquals(service.findAll().size(), 11);
+        assertEquals(service.findUserByLogin(user.getLogin()).getLogin(), user.getLogin());
     }
 }

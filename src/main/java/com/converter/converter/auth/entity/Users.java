@@ -16,6 +16,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 @Entity
@@ -65,6 +66,10 @@ public class Users implements UserDetails {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "users_id"), inverseJoinColumns = @JoinColumn(name = "roles_id"))
     private List<Roles> roles;
+
+    @OneToOne
+    @JoinColumn(name = "id")
+    private GoogleUser user;
 
     public Users(UserDTO user) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
@@ -209,7 +214,6 @@ public class Users implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-
         return getRoles()
                 .stream()
                 .map(roles1 -> {
@@ -271,5 +275,21 @@ public class Users implements UserDetails {
 
     public boolean isEmpty() {
         return this.login == null || this.name == null || this.surname == null || this.mail == null;
+    }
+
+    @Override
+    public String toString() {
+        StringJoiner joiner = new StringJoiner(", ", "{", "}");
+        if (this.id != null) {
+            joiner.add(this.id.toString());
+        }
+        joiner.add(this.name);
+        joiner.add(this.surname);
+        joiner.add(this.patronymic);
+        joiner.add(this.mail);
+        joiner.add(this.gender);
+        joiner.add(this.phone);
+        joiner.add(Integer.toString(this.age));
+        return joiner.toString();
     }
 }

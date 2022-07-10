@@ -4,7 +4,6 @@ import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.repository.RolesRepository;
 import com.converter.converter.auth.repository.UsersRepository;
-import com.converter.converter.auth.repository.dto.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -158,15 +157,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUserByIdAndLogin(Long id, String login) {
         logger.info("Start_Method_deleteUserByIdAndLogin(" + id + ", " + login + ")");
-        if (repository.findUserById(id).isEmpty()) {
-            logger.error("This_user_does_not_exist_or_has_been_deleted ");
-            throw new EntityNotFoundException("User with id:" + id + " not found");
+        if (repository.findUserById(id).isPresent()) {
+            if (repository.findUserByLogin(login).isPresent()) {
+                repository.deleteUserByIdAndLogin(id, login);
+            }
         }
-        if (repository.findUserByLogin(login).isEmpty()) {
-            logger.error("This_user_does_not_exist_or_has_been_deleted ");
-            throw new EntityNotFoundException("User with login:" + login + " not found");
-        }
-        repository.deleteUserByIdAndLogin(id, login);
     }
 
     @Override

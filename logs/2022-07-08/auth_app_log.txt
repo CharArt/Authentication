@@ -1,0 +1,159 @@
+2022-07-08 00:25:26.164 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 16696 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:25:26.164 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:26:17.191 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 8280 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:26:17.192 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:26:21.439 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.441 seconds (JVM running for 5.385)
+2022-07-08 00:28:04.171 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 6220 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:28:04.172 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:28:08.583 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.605 seconds (JVM running for 5.533)
+2022-07-08 00:32:28.752 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 9016 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:32:28.753 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:32:33.111 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.551 seconds (JVM running for 5.442)
+2022-07-08 00:33:15.646 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 12636 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:33:15.648 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:33:19.844 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.392 seconds (JVM running for 5.295)
+2022-07-08 00:38:23.563 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 6180 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:38:23.564 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:38:28.058 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.698 seconds (JVM running for 5.696)
+2022-07-08 00:39:53.535 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 9144 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:39:53.536 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:39:57.963 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.626 seconds (JVM running for 5.618)
+2022-07-08 00:40:57.209 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 12524 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 00:40:57.210 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 00:41:01.647 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.633 seconds (JVM running for 5.61)
+2022-07-08 00:41:02.353 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByBirthday(1993-02-26)
+2022-07-08 00:41:02.923 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-03-28 14:04:48.4533333)
+2022-07-08 00:41:02.929 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_with_this_parameters_not_exist!
+2022-07-08 00:41:02.951 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artem,Charykov,Pavlovich)
+2022-07-08 00:41:02.962 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_with_this_parameters_(Artem,Charykov,Pavlovich)_not_exist!
+2022-07-08 00:41:02.985 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 00:41:03.022 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 00:41:03.151 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByGender(male)
+2022-07-08 00:41:03.184 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(ArtPavChar@gmail.com)
+2022-07-08 00:41:03.207 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 00:41:03.245 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-07-08 00:41:03.499 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 00:41:03.502 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 00:41:03.521 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByAge(29)
+2022-07-08 00:41:03.559 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 00:41:03.562 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-07-08 00:41:03.583 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 00:41:03.585 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 00:41:03.850 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2022-07-08 18:48:00.265 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 12124 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:48:00.266 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:48:05.242 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 5.214 seconds (JVM running for 6.418)
+2022-07-08 18:48:05.456 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artem,Charykov,Pavlovich)
+2022-07-08 18:48:05.517 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_with_this_parameters_(Artem,Charykov,Pavlovich)_not_exist!
+2022-07-08 18:48:55.185 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 16120 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:48:55.186 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:48:59.702 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.724 seconds (JVM running for 5.702)
+2022-07-08 18:48:59.878 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artoym,Charykov,Pavlovich)
+2022-07-08 18:50:40.069 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 7248 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:50:40.069 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:50:44.165 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.304 seconds (JVM running for 5.298)
+2022-07-08 18:50:44.364 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-07-08 18:55:28.391 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 19100 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:55:28.392 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:55:32.690 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.505 seconds (JVM running for 5.475)
+2022-07-08 18:55:32.874 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2022-07-08 18:56:22.340 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 4316 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:56:22.341 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:56:26.660 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.509 seconds (JVM running for 5.466)
+2022-07-08 18:56:26.839 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2022-07-08 18:57:02.344 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 9268 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 18:57:02.345 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 18:57:06.629 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.484 seconds (JVM running for 5.415)
+2022-07-08 18:57:06.816 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2022-07-08 19:01:53.689 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 3584 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 19:01:53.690 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 19:01:57.884 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.391 seconds (JVM running for 5.34)
+2022-07-08 19:01:58.289 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-03-28 14:04:48.4533333)
+2022-07-08 19:01:58.345 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_with_this_parameters_not_exist!
+2022-07-08 19:03:58.098 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 1104 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 19:03:58.099 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 19:04:02.377 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.473 seconds (JVM running for 5.406)
+2022-07-08 19:04:02.796 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-07-07 00:20:39.1966667)
+2022-07-08 19:04:23.844 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 19028 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 19:04:23.844 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 19:04:28.198 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.545 seconds (JVM running for 5.526)
+2022-07-08 19:04:28.378 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 20:26:55.978 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 9800 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:26:55.978 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:27:00.304 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 4.53 seconds (JVM running for 5.579)
+2022-07-08 20:30:37.285 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 16276 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:30:37.286 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:30:43.907 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.946 seconds (JVM running for 8.476)
+2022-07-08 20:30:44.627 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-07-08 20:30:44.690 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 20:31:23.264 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 11260 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:31:23.265 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:31:29.842 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.905 seconds (JVM running for 8.628)
+2022-07-08 20:31:34.488 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 13748 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:31:34.489 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:31:40.451 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.193 seconds (JVM running for 7.601)
+2022-07-08 20:31:40.662 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 20:31:40.800 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 20:39:23.244 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 13508 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:39:23.245 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:39:29.801 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.901 seconds (JVM running for 8.415)
+2022-07-08 20:39:30.013 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 20:39:30.117 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:40:18.628 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 10868 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:40:18.630 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:40:27.280 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 9.05 seconds (JVM running for 11.673)
+2022-07-08 20:40:27.647 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 20:40:27.789 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:42:03.061 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 10076 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:42:03.062 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:42:09.803 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.073 seconds (JVM running for 8.698)
+2022-07-08 20:42:10.020 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 20:42:10.135 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:43:48.433 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 9008 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:43:48.435 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:43:54.988 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.89 seconds (JVM running for 8.458)
+2022-07-08 20:43:55.682 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-07-08 20:43:55.744 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2022-07-08 20:45:26.827 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 13220 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:45:26.828 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:45:33.596 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 7.081 seconds (JVM running for 8.688)
+2022-07-08 20:45:33.814 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:45:33.903 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-07-08 20:45:33.949 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:45:33.955 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:45:51.196 [main] INFO  com.converter.converter.auth.UserServiceTest - Starting UserServiceTest using Java 18 on CharArtPav-Laptop with PID 9520 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:45:51.197 [main] INFO  com.converter.converter.auth.UserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:45:57.641 [main] INFO  com.converter.converter.auth.UserServiceTest - Started UserServiceTest in 6.753 seconds (JVM running for 8.214)
+2022-07-08 20:45:58.354 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-07-08 20:45:58.428 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2022-07-08 20:45:58.816 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByBirthday(1993-02-26)
+2022-07-08 20:45:59.425 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-07-07 00:20:39.1966667)
+2022-07-08 20:46:00.535 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artoym,Charykov,Pavlovich)
+2022-07-08 20:46:00.574 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-07-08 20:46:00.609 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:00.642 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByGender(male)
+2022-07-08 20:46:00.685 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-07-08 20:46:00.721 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-07-08 20:46:00.877 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-07-08 20:46:01.191 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:01.198 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:01.217 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByAge(29)
+2022-07-08 20:46:01.246 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:01.251 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-07-08 20:46:01.292 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:01.298 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-07-08 20:46:01.863 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-07-08 20:46:01.875 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2022-07-08 20:46:01.901 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2022-07-08 20:52:22.374 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 6116 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:52:22.376 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:52:28.796 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 6.719 seconds (JVM running for 8.165)
+2022-07-08 20:54:31.487 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 6712 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:54:31.489 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:54:37.707 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 6.538 seconds (JVM running for 8.023)
+2022-07-08 20:55:36.916 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 15468 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:55:36.918 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:55:43.400 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 6.791 seconds (JVM running for 8.208)
+2022-07-08 20:57:07.145 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 16392 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-08 20:57:07.147 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-08 20:57:14.248 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 7.43 seconds (JVM running for 8.96)

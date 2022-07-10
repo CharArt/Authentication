@@ -5,14 +5,14 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
-import javax.transaction.Transactional;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 
-
+@Repository
 public interface UsersRepository extends JpaRepository<Users, Long> {
 
     @Query(value = "SELECT * FROM users " +
@@ -66,7 +66,7 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
     @Query(value = "SELECT * FROM users" +
             " LEFT JOIN users_roles ON users_roles.users_id = users.id " +
             " LEFT JOIN roles ON roles.id = users_roles.roles_id " +
-            " WHERE usersenable=?;", nativeQuery = true)
+            " WHERE users.enable=?;", nativeQuery = true)
     List<Users> findUserByEnable(boolean enable);
 
     @Query(value = "SELECT * FROM users" +

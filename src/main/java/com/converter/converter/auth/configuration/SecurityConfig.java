@@ -2,6 +2,7 @@ package com.converter.converter.auth.configuration;
 
 import com.converter.converter.auth.repository.dto.CustomOAuth2User;
 import com.converter.converter.auth.service.CustomOAuth2UserService;
+import com.converter.converter.auth.service.GoogleUsersService;
 import com.converter.converter.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -29,13 +30,17 @@ import java.io.IOException;
 public class SecurityConfig {
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
     private final UserService userService;
-
+    private final GoogleUsersService googleService;
     private final CustomOAuth2UserService customOAuth2UserService;
 
     @Autowired
-    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint, UserService userService, CustomOAuth2UserService customOAuth2UserService) {
+    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
+                          UserService userService,
+                          GoogleUsersService googleService,
+                          CustomOAuth2UserService customOAuth2UserService) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.userService = userService;
+        this.googleService = googleService;
         this.customOAuth2UserService = customOAuth2UserService;
     }
 

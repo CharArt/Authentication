@@ -4,12 +4,15 @@ import com.converter.converter.auth.repository.dto.RoleDTO;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "roles")
 public class Roles {
+
     public static final int ADMIN = 1;
     public static final int USER = 2;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,6 +22,17 @@ public class Roles {
 
     @ManyToMany(mappedBy = "roles")
     private List<Users> users;
+
+    @ManyToMany(mappedBy = "roles")
+    private List<GoogleUser> googleUsers;
+
+    public List<GoogleUser> getGoogleUsers() {
+        return googleUsers;
+    }
+
+    public void setGoogleUsers(List<GoogleUser> googleUsers) {
+        this.googleUsers = googleUsers;
+    }
 
     public Long getId() {
         return this.id;
@@ -48,6 +62,9 @@ public class Roles {
     }
 
     public Roles(RoleDTO rDTO) {
+        if (Objects.equals(rDTO, null)) {
+            throw new NullPointerException();
+        }
         this.id = rDTO.getId();
         this.role = rDTO.getRole();
     }
