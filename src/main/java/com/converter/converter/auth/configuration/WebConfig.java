@@ -8,4 +8,5 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @EntityScan("com.converter.converter.auth")
 public class WebConfig {
+
 }

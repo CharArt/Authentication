@@ -2,9 +2,13 @@ package com.converter.converter.auth.service;
 
 import com.converter.converter.auth.entity.GoogleUser;
 import com.converter.converter.auth.repository.GoogleUserRepository;
+import com.converter.converter.auth.repository.dto.OAuth2UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
+import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,23 +18,21 @@ import java.util.Objects;
 
 @Service
 @Transactional
-public class GoogleUsersServiceImpl implements GoogleUsersService {
+public class GoogleUsersServiceImpl extends DefaultOAuth2UserService implements GoogleUsersService {
 
-    private GoogleUserRepository repository;
-    private UserService service;
+    private final GoogleUserRepository repository;
+    private final UserService service;
 
     private final Logger logger = LoggerFactory.getLogger(GoogleUsersServiceImpl.class);
 
+    @Autowired
     public GoogleUsersServiceImpl(GoogleUserRepository repository, UserService service) {
         this.repository = repository;
         this.service = service;
     }
 
-    @Autowired
-
-
     @Override
-    public GoogleUser findUserById(Long id) {
+    public GoogleUser findGoogleUserById(Long id) {
         logger.info("Start_Method_findUserById(" + id + ")");
         return repository.findGoogleUserById(id).orElseThrow(EntityNotFoundException::new);
     }
@@ -56,25 +58,49 @@ public class GoogleUsersServiceImpl implements GoogleUsersService {
     }
 
     @Override
-    public void saveNewGoogleUser(OAuth2User oAuth2User) {
+    public boolean saveNewGoogleUser(OAuth2User oAuth2User) {
         if (!Objects.equals(oAuth2User, null)) {
-            Long id = service.findUserByMail(oAuth2User.getAttribute("email")).getId();
-            logger.info("Start_Method_saveNewGoogleUser(" + id.toString() + ", " + oAuth2User.getAttribute("sub") + ", " + oAuth2User.getAttribute("given_name") + ", "
-                    + oAuth2User.getAttribute("family_name") + ", " + oAuth2User.getAttribute("email") + ", "
-                    + oAuth2User.getAttribute("email_verified") + ", " + oAuth2User.getAttribute("locale") + ")");
-            repository.saveNewGoogleUsers(id,
-                    oAuth2User.getAttribute("sub"),
-                    oAuth2User.getAttribute("given_name"),
+            if (repository.findGoogleUserByNameAndSurnameAndEmail(oAuth2User.getAttribute("given_name"),
                     oAuth2User.getAttribute("family_name"),
-                    oAuth2User.getAttribute("email"),
-                    oAuth2User.getAttribute("email_verified"),
-                    oAuth2User.getAttribute("locale"));
+                    oAuth2User.getAttribute("email")).isPresent()) {
+
+                Long id = service.findUserByMail(oAuth2User.getAttribute("email")).getId();
+
+                logger.info("Start_Method_saveNewGoogleUser(" + id.toString() + ", "
+                        + oAuth2User.getAttribute("sub") + ", "
+                        + oAuth2User.getAttribute("given_name") + ", "
+                        + oAuth2User.getAttribute("family_name") + ", "
+                        + oAuth2User.getAttribute("email") + ", "
+                        + oAuth2User.getAttribute("email_verified") + ", "
+                        + oAuth2User.getAttribute("locale") + ")");
+
+                repository.saveNewGoogleUsers(id,
+                        oAuth2User.getAttribute("sub"),
+                        oAuth2User.getAttribute("given_name"),
+                        oAuth2User.getAttribute("family_name"),
+                        oAuth2User.getAttribute("email"),
+                        oAuth2User.getAttribute("email_verified"),
+                        oAuth2User.getAttribute("locale"));
+                return true;
+            } else {
+                logger.info("client_is_exist");
+                return false;
+            }
+        } else {
+            logger.info("can't_use_null_entity");
+            throw new NullPointerException();
         }
     }
 
     @Override
     public void saveRolesForGoogleUsers(Long google_id, Long roles_id) {
-        logger.info("Start_Method_deleteGoogleUserById(" + google_id + ", " + roles_id + ")");
+        logger.info("Start_Method_deleteGoogleUserById(" + google_id.toString() + ", " + roles_id.toString() + ")");
         repository.saveRoleForGoogleUser(google_id, roles_id);
+    }
+
+    @Override
+    public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
+        OAuth2User oAuth2User = super.loadUser(userRequest);
+        return new OAuth2UserDTO(oAuth2User);
     }
 }
