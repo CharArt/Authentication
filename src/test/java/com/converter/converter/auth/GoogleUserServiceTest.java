@@ -25,7 +25,7 @@ public class GoogleUserServiceTest {
 
     @Test
     void findUserByIdTest() {
-        assertEquals(service.findUserById(1L).getId(), 1L);
+        assertEquals(service.findGoogleUserById(1L).getId(), 1L);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class GoogleUserServiceTest {
     void deleteGoogleUserByIdTest() {
         service.deleteGoogleUserById(1L);
         assertThrows(EntityNotFoundException.class, () -> {
-            service.findUserById(1L);
+            service.findGoogleUserById(1L);
         });
     }
 }

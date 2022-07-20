@@ -1,0 +1,27 @@
+2022-07-12 00:03:02.854 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 10780 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:03:02.855 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:11:30.972 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 14104 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:11:30.974 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:14:12.618 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 1832 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:14:12.619 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:14:27.077 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 3372 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:14:27.078 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:15:13.355 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 11652 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:15:13.355 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:15:13.850 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 14084 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:15:13.851 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:23:59.223 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 4236 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:23:59.224 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:26:16.609 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 10052 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:26:16.611 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:27:19.797 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18 on CharArtPav-Laptop with PID 8352 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:27:19.797 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:27:24.347 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 4.761 seconds (JVM running for 5.713)
+2022-07-12 00:27:24.531 [main] INFO  c.c.converter.auth.service.GoogleUsersServiceImpl - Start_Method_deleteGoogleUserById(1)
+2022-07-12 00:27:24.652 [main] INFO  c.c.converter.auth.service.GoogleUsersServiceImpl - Start_Method_findUserById(1)
+2022-07-12 00:28:14.946 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 9160 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 00:28:14.947 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 00:28:19.059 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.455 seconds (JVM running for 4.936)
+2022-07-12 00:38:49.204 [http-nio-8080-exec-1] INFO  c.c.converter.auth.service.GoogleUsersServiceImpl - client_is_exist
+2022-07-12 23:32:12.620 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 12324 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-12 23:32:12.622 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"

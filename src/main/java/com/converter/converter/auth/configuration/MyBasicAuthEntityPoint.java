@@ -17,7 +17,7 @@ public class MyBasicAuthEntityPoint extends BasicAuthenticationEntryPoint {
         response.addHeader("Content-Type", "application/json");
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         PrintWriter writer = response.getWriter();
-        System.out.println(authException.getMessage());
+        System.out.println(" this exception from MyBasicAuthEntityPoint " + authException.getMessage());
         writer.println("HTTP Status 401 - " + authException.getMessage());
     }
 

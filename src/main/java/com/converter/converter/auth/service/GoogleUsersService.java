@@ -5,7 +5,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 
 public interface GoogleUsersService {
 
-    public GoogleUser findUserById(Long id);
+    public GoogleUser findGoogleUserById(Long id);
 
     public GoogleUser findUserBySub(String sub);
 
@@ -13,7 +13,7 @@ public interface GoogleUsersService {
 
     void deleteGoogleUserById(Long id);
 
-    void saveNewGoogleUser(OAuth2User oAuth2User);
+    boolean saveNewGoogleUser(OAuth2User oAuth2User);
 
     void saveRolesForGoogleUsers(Long google_id, Long roles_id);
 }

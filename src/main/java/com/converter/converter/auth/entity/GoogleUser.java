@@ -45,7 +45,6 @@ public class GoogleUser {
 
     public GoogleUser() {
     }
-
     public GoogleUser(Long user_id, String sub, String given_name, String family_name, String email, boolean email_verified, String locale, Users user) {
         this.user_id = user_id;
         this.sub = sub;
@@ -68,7 +67,7 @@ public class GoogleUser {
         if (oAuth2User.getAttribute("given_name") != null) {
             this.given_name = oAuth2User.getAttribute("given_name");
         }
-        if (oAuth2User.getAttribute("family_nameub") != null) {
+        if (oAuth2User.getAttribute("family_name") != null) {
             this.family_name = oAuth2User.getAttribute("family_name");
         }
         if (oAuth2User.getAttribute("email") != null) {
@@ -162,6 +161,7 @@ public class GoogleUser {
     public void setRolesList(List<Roles> rolesList) {
         this.roles = rolesList;
     }
+
 
     @Override
     public int hashCode() {
