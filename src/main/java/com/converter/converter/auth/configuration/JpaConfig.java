@@ -67,5 +67,4 @@ public class JpaConfig {
     public TransactionOperations transactionOperations() {
         return new TransactionTemplate(transactionManager());
     }
-
 }

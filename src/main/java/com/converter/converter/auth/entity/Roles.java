@@ -10,9 +10,6 @@ import java.util.Objects;
 @Table(name = "roles")
 public class Roles {
 
-    public static final int ADMIN = 1;
-    public static final int USER = 2;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

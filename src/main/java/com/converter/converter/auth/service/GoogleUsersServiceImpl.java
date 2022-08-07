@@ -1,31 +1,23 @@
 package com.converter.converter.auth.service;
 
 import com.converter.converter.auth.entity.GoogleUser;
-import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.repository.GoogleUserRepository;
-import com.converter.converter.auth.repository.dto.OAuth2UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
-import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
-import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Service
 @Transactional
-public class GoogleUsersServiceImpl extends DefaultOAuth2UserService implements GoogleUsersService {
+public class GoogleUsersServiceImpl implements GoogleUsersService {
 
     private final GoogleUserRepository repository;
     private final UserService service;
-    private final RoleService roleService;
 
     private final Logger logger = LoggerFactory.getLogger(GoogleUsersServiceImpl.class);
 
@@ -33,7 +25,6 @@ public class GoogleUsersServiceImpl extends DefaultOAuth2UserService implements 
     public GoogleUsersServiceImpl(GoogleUserRepository repository, UserService service, RoleService roleService) {
         this.repository = repository;
         this.service = service;
-        this.roleService = roleService;
     }
 
     @Override
@@ -101,15 +92,5 @@ public class GoogleUsersServiceImpl extends DefaultOAuth2UserService implements 
     public void saveRolesForGoogleUsers(Long google_id, Long roles_id) {
         logger.info("Start_Method_deleteGoogleUserById(" + google_id.toString() + ", " + roles_id.toString() + ")");
         repository.saveRoleForGoogleUser(google_id, roles_id);
-    }
-
-    @Override
-    public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
-        OAuth2User oAuth2User = super.loadUser(userRequest);
-        OAuth2UserDTO userDTO = new OAuth2UserDTO(oAuth2User);
-        List<Roles> list = new ArrayList<>();
-        list.add(roleService.findByRoleName("USER"));
-        userDTO.setRoles(list);
-        return userDTO;
     }
 }

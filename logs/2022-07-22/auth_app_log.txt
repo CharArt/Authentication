@@ -1,0 +1,26 @@
+2022-07-22 00:21:14.386 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 11672 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:21:14.386 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:21:18.434 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.394 seconds (JVM running for 4.861)
+2022-07-22 00:23:12.868 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 9496 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:23:12.869 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:23:16.937 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.462 seconds (JVM running for 4.974)
+2022-07-22 00:26:16.894 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 11356 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:26:16.895 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:26:21.464 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.965 seconds (JVM running for 5.643)
+2022-07-22 00:26:58.891 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername()
+2022-07-22 00:27:10.437 [http-nio-8080-exec-6] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(Test1)
+2022-07-22 00:31:11.752 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 4448 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:31:11.752 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:31:15.678 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.267 seconds (JVM running for 4.766)
+2022-07-22 00:34:43.122 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 13824 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:34:43.124 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:34:47.317 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.572 seconds (JVM running for 5.039)
+2022-07-22 00:43:03.791 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 5368 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:43:03.792 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:43:07.693 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.253 seconds (JVM running for 4.74)
+2022-07-22 00:43:59.673 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 9256 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:43:59.674 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:44:03.479 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.143 seconds (JVM running for 4.606)
+2022-07-22 00:49:28.403 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on CharArtPav-Laptop with PID 8432 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-07-22 00:49:28.404 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 00:49:32.333 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.272 seconds (JVM running for 4.759)

@@ -1,9 +1,12 @@
 package com.converter.converter.auth.entity;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import javax.persistence.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "google_users")
@@ -45,6 +48,7 @@ public class GoogleUser {
 
     public GoogleUser() {
     }
+
     public GoogleUser(Long user_id, String sub, String given_name, String family_name, String email, boolean email_verified, String locale, Users user) {
         this.user_id = user_id;
         this.sub = sub;
@@ -200,5 +204,18 @@ public class GoogleUser {
         joiner.add(this.locale);
         joiner.add(this.user.toString());
         return joiner.toString();
+    }
+
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return getRolesList()
+                .stream()
+                .map(roles1 -> {
+                    SimpleGrantedAuthority SGA = new SimpleGrantedAuthority("ROLE_" + roles1.getRole());
+                    return SGA;
+                }).collect(Collectors.toList());
+    }
+
+    public boolean isEmpty() {
+        return this.getSub().isEmpty() || this.getEmail().isEmpty() || this.getGiven_name().isEmpty() || this.getFamily_name().isEmpty() ;
     }
 }
