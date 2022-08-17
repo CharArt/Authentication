@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -32,5 +33,12 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public void createdNewRole(Roles newRole) {
         repository.save(newRole);
+    }
+
+    @Override
+    public List<Roles> getDefaultRole() {
+        List<Roles> defaultRole = new ArrayList<>();
+        defaultRole.add(repository.findByRoleName("USER"));
+        return defaultRole;
     }
 }

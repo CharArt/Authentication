@@ -216,6 +216,6 @@ public class GoogleUser {
     }
 
     public boolean isEmpty() {
-        return this.getSub().isEmpty() || this.getEmail().isEmpty() || this.getGiven_name().isEmpty() || this.getFamily_name().isEmpty() ;
+        return this.getSub() == null || this.getEmail() == null || this.getGiven_name() == null || this.getFamily_name() == null;
     }
 }

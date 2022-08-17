@@ -1,6 +1,7 @@
 package com.converter.converter.auth.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.server.authentication.AuthenticationWebFilter;
 
+import javax.crypto.SecretKey;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -28,10 +31,14 @@ public class JwtUserNameAndPasswordAuthenticationFilter extends UsernamePassword
     }
 
     @Override
-    public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
+    public Authentication attemptAuthentication(HttpServletRequest request,
+                                                HttpServletResponse response) throws AuthenticationException {
         try {
-            UserNameAndPasswordAuthenticationReques authenticationRequest = new ObjectMapper().readValue(request.getInputStream(), UserNameAndPasswordAuthenticationReques.class);
-            Authentication authentication = new UsernamePasswordAuthenticationToken(authenticationRequest.getUserName(), authenticationRequest.getPassword());
+            UserNameAndPasswordAuthenticationReques authenticationRequest = new ObjectMapper()
+                    .readValue(request.getInputStream(), UserNameAndPasswordAuthenticationReques.class);
+            Authentication authentication = new UsernamePasswordAuthenticationToken(
+                    authenticationRequest.getUserName(),
+                    authenticationRequest.getPassword());
             return authenticationManager.authenticate(authentication);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -40,8 +47,11 @@ public class JwtUserNameAndPasswordAuthenticationFilter extends UsernamePassword
 
 
     @Override
-    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
-        String key = "secureSecureSecureSecureSecureSecure";
+    protected void successfulAuthentication(HttpServletRequest request,
+                                            HttpServletResponse response,
+                                            FilterChain chain,
+                                            Authentication authResult) throws IOException, ServletException {
+        String key = "SecretSecretSecretSecretSecretSecretSecretSecretSecretSecret";
         String token = Jwts.builder()
                 .setSubject(authResult.getName())
                 .claim("authorities", authResult.getAuthorities())

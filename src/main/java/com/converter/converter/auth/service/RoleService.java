@@ -10,4 +10,6 @@ public interface RoleService {
     Roles findByRoleName(String roleName);
 
     void createdNewRole(Roles newRole);
+
+    List<Roles> getDefaultRole();
 }

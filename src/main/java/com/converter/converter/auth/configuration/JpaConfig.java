@@ -26,7 +26,7 @@ public class JpaConfig {
     private static final String URL = "jdbc:sqlserver://localhost;DatabaseName=users_roles_db;integratedSecurity=false;" +
             "encrypt=false;trustServerCertificate=false";
     private static final String LOGIN = "Artem";
-    private static final String PASSWORD = "12345";
+    private static final String PASSWORD = "1234567";
 
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
