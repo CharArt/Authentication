@@ -3,7 +3,6 @@ package com.converter.converter.auth.tools;
 import com.converter.converter.auth.entity.GoogleUser;
 import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
-import com.converter.converter.auth.jwt.JwtTokenProvider;
 import com.converter.converter.auth.repository.dto.OAuth2UserImpl;
 import com.converter.converter.auth.service.GoogleUsersServiceImpl;
 import com.converter.converter.auth.service.RoleService;
@@ -86,9 +85,6 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
         oAuth2User.setGoogleUser(googleService.findUserBySub(oAuth2User.getSub()));
 
         response.sendRedirect("/hello");
-
-        JwtTokenProvider provider = new JwtTokenProvider(userService);
-        provider.createToken();
 
         super.onAuthenticationSuccess(request, response, authentication);
     }

@@ -1,6 +1,7 @@
 package com.converter.converter.auth.configuration;
 
-import com.converter.converter.auth.jwt.JwtUserNameAndPasswordAuthenticationFilter;
+import com.converter.converter.auth.jwt.JwtConfiguration;
+import com.converter.converter.auth.jwt.JwtTokenProvider;
 import com.converter.converter.auth.service.OAuth2UserServiceImpl;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.tools.OAuth2LoginSuccessHandler;
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -24,18 +26,20 @@ public class SecurityConfig {
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
     private final OAuth2UserServiceImpl OAuth2UserServiceImpl;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
-    private AuthenticationManager authenticationManager;
+    private final UserService userService;
+    private JwtTokenProvider provider;
 
     @Autowired
     public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
                           OAuth2UserServiceImpl OAuth2UserServiceImpl,
                           OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler,
                           UserService userService,
-                          AuthenticationManager authenticationManager) {
+                          JwtTokenProvider provider) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.OAuth2UserServiceImpl = OAuth2UserServiceImpl;
         this.oAuth2LoginSuccessHandler = oAuth2LoginSuccessHandler;
-        this.authenticationManager = authenticationManager;
+        this.userService = userService;
+        this.provider = provider;
     }
 
     @Bean
@@ -43,10 +47,10 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder(12);
     }
 
-//    @Bean
-//    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
-//        return authenticationConfiguration.getAuthenticationManager();
-//    }
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity https) throws Exception {
@@ -74,6 +78,8 @@ public class SecurityConfig {
                 .defaultSuccessUrl("/hello", true)
                 .failureForwardUrl("/login").permitAll()
                 .and()
+                .apply(new JwtConfiguration(provider))
+                .and()
                 .oauth2Login()
                 .loginPage("/login")
                 .userInfoEndpoint().userService(OAuth2UserServiceImpl)
@@ -81,8 +87,6 @@ public class SecurityConfig {
                 .failureUrl("/login").permitAll()
                 .successHandler(oAuth2LoginSuccessHandler)
                 .and()
-//                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .addFilter(new JwtUserNameAndPasswordAuthenticationFilter(authenticationManager))
                 .logout().logoutUrl("/logout").permitAll()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
                 .invalidateHttpSession(true)
