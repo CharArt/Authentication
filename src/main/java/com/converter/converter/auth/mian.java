@@ -58,5 +58,10 @@ public class mian {
 //            System.out.println(userAttributes.get("locale"));
 //        }
 //    }
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+        String password = "Test1";
+        password = encoder.encode(password);
+        System.out.println(password);
+
     }
 }

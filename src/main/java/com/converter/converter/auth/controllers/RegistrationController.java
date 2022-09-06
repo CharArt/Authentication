@@ -35,12 +35,9 @@ public class RegistrationController {
     }
 
     @GetMapping("/registration")
-    public String FrontPage(ModelMap modelMap, OAuth2AuthenticationToken auth) {
+    public String FrontPage(ModelMap modelMap) {
         Users newUser = new Users();
-        Map<String, String> clientUrls = new HashMap<>();
-        clientUrls.put("Google", "http://localhost:8080/oauth2/authorization/google");
         modelMap.addAttribute("user", newUser);
-        modelMap.addAttribute("clientUrls", clientUrls);
         return "registration";
     }
 

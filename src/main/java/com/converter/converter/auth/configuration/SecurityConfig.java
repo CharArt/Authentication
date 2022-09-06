@@ -4,7 +4,7 @@ import com.converter.converter.auth.jwt.JwtConfiguration;
 import com.converter.converter.auth.jwt.JwtTokenProvider;
 import com.converter.converter.auth.service.OAuth2UserServiceImpl;
 import com.converter.converter.auth.service.UserService;
-import com.converter.converter.auth.tools.OAuth2LoginSuccessHandler;
+import com.converter.converter.auth.configuration.tools.OAuth2LoginSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -26,20 +26,19 @@ public class SecurityConfig {
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
     private final OAuth2UserServiceImpl OAuth2UserServiceImpl;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
-    private final UserService userService;
-    private JwtTokenProvider provider;
+    private final JwtTokenProvider provider;
+    private final UserService service;
 
     @Autowired
     public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
                           OAuth2UserServiceImpl OAuth2UserServiceImpl,
                           OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler,
-                          UserService userService,
-                          JwtTokenProvider provider) {
+                          JwtTokenProvider provider, UserService service) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.OAuth2UserServiceImpl = OAuth2UserServiceImpl;
         this.oAuth2LoginSuccessHandler = oAuth2LoginSuccessHandler;
-        this.userService = userService;
         this.provider = provider;
+        this.service = service;
     }
 
     @Bean
@@ -72,13 +71,13 @@ public class SecurityConfig {
                 .antMatchers(HttpMethod.PUT, "/api/user/Update").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.DELETE, "/api/user/Delete").hasAnyRole("ADMIN")
                 .and()
-                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
+                .apply(new JwtConfiguration(provider))
                 .and()
                 .formLogin().loginPage("/login")
-                .defaultSuccessUrl("/hello", true)
+                .defaultSuccessUrl("/hello")
                 .failureForwardUrl("/login").permitAll()
                 .and()
-                .apply(new JwtConfiguration(provider))
+                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
                 .and()
                 .oauth2Login()
                 .loginPage("/login")

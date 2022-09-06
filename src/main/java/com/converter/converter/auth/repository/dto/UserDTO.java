@@ -2,7 +2,7 @@ package com.converter.converter.auth.repository.dto;
 
 import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
-import com.converter.converter.auth.tools.UserDTOBuilder;
+import com.converter.converter.auth.configuration.tools.UserDTOBuilder;
 import org.springframework.stereotype.Component;
 
 import javax.validation.Valid;

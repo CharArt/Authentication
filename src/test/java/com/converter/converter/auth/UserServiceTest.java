@@ -5,7 +5,7 @@ import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.repository.dto.RoleDTO;
 import com.converter.converter.auth.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
-import com.converter.converter.auth.tools.UserDTOBuilder;
+import com.converter.converter.auth.configuration.tools.UserDTOBuilder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
