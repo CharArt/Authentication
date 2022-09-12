@@ -1,7 +1,6 @@
 package com.converter.converter.auth.jwt;
 
 import com.converter.converter.auth.entity.Roles;
-import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.service.UserService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
@@ -12,24 +11,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Component
 public class JwtTokenProvider {
     private String secret = "SecretSecretSecretSecretSecretSecretSecretSecretSecretSecret";
     private final long timeValidity = new Date(System.currentTimeMillis() + 30 * 60 * 1000).getTime();
-    private UserDetailsService service;
+    private UserService service;
 
     @Autowired
-    public JwtTokenProvider(UserDetailsService service) {
+    public JwtTokenProvider(UserService service) {
         this.service = service;
     }
 
@@ -41,6 +36,7 @@ public class JwtTokenProvider {
     public String createToken(String login, List<Roles> roleList) {
         Claims claims = Jwts.claims().setSubject(login);
         claims.put("roles", getRoleNames(roleList));
+        claims.put("password", service.findUserByLogin(login).getPassword());
         Date now = new Date();
         return Jwts.builder()
                 .setClaims(claims)
@@ -60,8 +56,8 @@ public class JwtTokenProvider {
 
     public String resolveToken(HttpServletRequest request) {
         String bearerToken = request.getHeader("Authorization");
-        if (bearerToken != null && bearerToken.startsWith("Bearer_")) {
-            return bearerToken.substring(7, bearerToken.length());
+        if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
+            return bearerToken.substring(7);
         }
         System.out.println("return null in method resolveToken from JwtTokenProvider");
         return null;
@@ -69,8 +65,8 @@ public class JwtTokenProvider {
 
     public boolean validateToken(String token) {
         try {
-            Jws<Claims> claims = Jwts.parserBuilder().setSigningKey(Keys.hmacShaKeyFor(secret.getBytes())).build().parseClaimsJws(token);
-            if (claims.getBody().getExpiration().before(new Date())) {
+            Jws<Claims> claims = Jwts.parserBuilder().setSigningKey(secret.getBytes()).build().parseClaimsJws(token);
+            if (claims.getBody().getIssuedAt().before(new Date())) {
                 return false;
             }
             return false;

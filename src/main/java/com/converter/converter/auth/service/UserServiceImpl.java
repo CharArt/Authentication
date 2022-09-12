@@ -27,8 +27,8 @@ public class UserServiceImpl implements UserService {
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
-    public UserServiceImpl(UsersRepository repository, RolesRepository rolesRepository) {
-        this.repository = repository;
+    public UserServiceImpl(UsersRepository usersRepository, RolesRepository rolesRepository) {
+        this.repository = usersRepository;
         this.rolesRepository = rolesRepository;
     }
 
@@ -134,12 +134,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) {
-        logger.info("Start_Method_loadUserByUsername(" + username + ")");
-        return repository.findUserByLogin(username).orElseThrow(EntityNotFoundException::new);
-    }
-
-    @Override
     public Users getLastPerson() {
         return repository.lastUser();
     }
@@ -216,5 +210,11 @@ public class UserServiceImpl implements UserService {
                 repository.saveRoleForUser(targetUser.getId(), role.getId());
             }
         }
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) {
+        logger.info("Start_Method_loadUserByUsername(" + username + ")");
+        return repository.findUserByLogin(username).orElseThrow(EntityNotFoundException::new);
     }
 }

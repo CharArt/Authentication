@@ -1,12 +1,14 @@
 package com.converter.converter.auth.controllers.rest;
 
 import com.converter.converter.auth.entity.Users;
+import com.converter.converter.auth.jwt.JwtTokenProvider;
 import com.converter.converter.auth.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.validation.CustomUserDTOValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
@@ -19,10 +21,12 @@ import java.util.regex.Pattern;
 @RequestMapping("/api/user")
 public class UserRestController {
     private final UserService userService;
-    private CustomUserDTOValidator validator;
+    private final CustomUserDTOValidator validator;
+
 
     @Autowired
-    public UserRestController(UserService userService, CustomUserDTOValidator validator) {
+    public UserRestController(UserService userService,
+                              CustomUserDTOValidator validator) {
         this.userService = userService;
         this.validator = validator;
     }
