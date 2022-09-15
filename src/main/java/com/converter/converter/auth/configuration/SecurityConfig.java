@@ -1,15 +1,15 @@
 package com.converter.converter.auth.configuration;
 
+import com.converter.converter.auth.jwt.JwtConfig;
 import com.converter.converter.auth.jwt.JwtConfiguration;
+import com.converter.converter.auth.jwt.JwtSecretKey;
 import com.converter.converter.auth.jwt.JwtTokenProvider;
-import com.converter.converter.auth.jwt.JwtUsernameAndPasswordAuthenticationFilter;
 import com.converter.converter.auth.service.OAuth2UserServiceImpl;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.tools.OAuth2LoginSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -30,18 +30,22 @@ public class SecurityConfig {
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
     private final JwtTokenProvider provider;
     private final UserService service;
+    private final JwtConfig config;
+    private final JwtSecretKey secretKey;
 
     @Autowired
     public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
                           OAuth2UserServiceImpl OAuth2UserServiceImpl,
                           OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler,
                           JwtTokenProvider provider,
-                          UserService service) {
+                          UserService service, JwtConfig config, JwtSecretKey secretKey) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.OAuth2UserServiceImpl = OAuth2UserServiceImpl;
         this.oAuth2LoginSuccessHandler = oAuth2LoginSuccessHandler;
         this.provider = provider;
         this.service = service;
+        this.config = config;
+        this.secretKey = secretKey;
     }
 
     @Bean
@@ -76,20 +80,22 @@ public class SecurityConfig {
                 .antMatchers(HttpMethod.PUT, "/api/user/Update").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.DELETE, "/api/user/Delete").hasAnyRole("ADMIN")
                 .and()
-                .apply(new JwtConfiguration(service))
-//                .and()
-//                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
-//                .and()
-//                .formLogin().loginPage("/login")
-//                .defaultSuccessUrl("/hello")
-//                .failureForwardUrl("/login").permitAll()
-//                .and()
-//                .oauth2Login()
-//                .loginPage("/login")
-//                .userInfoEndpoint().userService(OAuth2UserServiceImpl)
-//                .and()
-//                .failureUrl("/login").permitAll()
-//                .successHandler(oAuth2LoginSuccessHandler)
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .apply(new JwtConfiguration(service, config, secretKey))
+                .and()
+                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
+                .and()
+                .formLogin().loginPage("/login")
+                .defaultSuccessUrl("/hello")
+                .failureForwardUrl("/login").permitAll()
+                .and()
+                .oauth2Login()
+                .loginPage("/login")
+                .userInfoEndpoint().userService(OAuth2UserServiceImpl)
+                .and()
+                .failureUrl("/login").permitAll()
+                .successHandler(oAuth2LoginSuccessHandler)
                 .and()
                 .logout().logoutUrl("/logout").permitAll()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))

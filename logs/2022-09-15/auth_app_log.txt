@@ -1,0 +1,12 @@
+2022-09-15 00:08:39.474 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 16468 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-09-15 00:08:39.475 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-15 00:08:46.170 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 7.242 seconds (JVM running for 8.481)
+2022-09-15 00:09:04.235 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-09-15 00:09:40.241 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-09-15 00:09:40.358 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-09-15 00:11:47.681 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 6916 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-09-15 00:11:47.683 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-15 00:11:54.353 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 7.209 seconds (JVM running for 8.155)
+2022-09-15 00:12:05.122 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-09-15 00:12:21.647 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-09-15 00:12:21.760 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)

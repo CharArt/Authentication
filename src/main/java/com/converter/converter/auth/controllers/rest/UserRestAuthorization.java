@@ -1,19 +1,11 @@
 package com.converter.converter.auth.controllers.rest;
 
-import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.jwt.JwtTokenProvider;
-import com.converter.converter.auth.repository.dto.AuthenticationUserDTO;
 import com.converter.converter.auth.service.UserService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/user/auth")
@@ -40,7 +32,8 @@ public class UserRestAuthorization {
 //    }
 
     @PostMapping("/login")
-    public void login(@RequestBody AuthenticationUserDTO userDTO) {
-
+    public ResponseEntity<String> login() {
+        String str = "successful";
+        return ResponseEntity.ok(str);
     }
 }

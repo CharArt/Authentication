@@ -1,17 +1,13 @@
 package com.converter.converter.auth.jwt;
 
-import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.repository.dto.AuthenticationUserDTO;
-import com.converter.converter.auth.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -23,13 +19,17 @@ import java.util.Date;
 
 public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    private AuthenticationManager authenticationManager;
-    private UserService service;
+    private final AuthenticationManager authenticationManager;
+    private final JwtConfig config;
+    private final JwtSecretKey secretKey;
 
+    @Autowired
     public JwtUsernameAndPasswordAuthenticationFilter(AuthenticationManager authenticationManager,
-                                                      UserService service) {
+                                                      JwtConfig config,
+                                                      JwtSecretKey secretKey) {
         this.authenticationManager = authenticationManager;
-        this.service = service;
+        this.config = config;
+        this.secretKey = secretKey;
     }
 
 
@@ -50,8 +50,8 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
     @Override
     protected void successfulAuthentication(HttpServletRequest request,
                                             HttpServletResponse response,
-                                            FilterChain chain, Authentication authResult) throws IOException, ServletException {
-        String secret = "SecretSecretSecretSecretSecretSecretSecretSecretSecretSecret";
+                                            FilterChain chain,
+                                            Authentication authResult) throws IOException, ServletException {
         long timeValidity = new Date(System.currentTimeMillis() + 30 * 60 * 1000).getTime();
         Date now = new Date();
 
@@ -59,9 +59,8 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
                 .setSubject(authResult.getName())
                 .claim("authorities", authResult.getAuthorities())
                 .setIssuedAt(new Date(now.getTime() + timeValidity))
-                .signWith(Keys.hmacShaKeyFor(secret.getBytes()))
+                .signWith(secretKey.secretKey())
                 .compact();
-        response.addHeader("Authorization", "Bearer " + token);
-        super.successfulAuthentication(request, response, chain, authResult);
+        response.addHeader(config.getAuthorizationHeader(), config.getTokenPrefix() + token);
     }
 }
