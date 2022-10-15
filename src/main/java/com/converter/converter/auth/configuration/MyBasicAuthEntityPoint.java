@@ -10,7 +10,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @Component
-public class MyBasicAuthEntityPoint extends BasicAuthenticationEntryPoint {
+public class MyBasicAuthEntityPoint extends BasicAuthenticationEntryPoint{
+
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
         response.addHeader("WWW-Authenticate", "Basic realm=" + getRealmName() + "");

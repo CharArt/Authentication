@@ -1,6 +1,6 @@
 package com.converter.converter.auth.entity;
 
-import com.converter.converter.auth.repository.dto.RoleDTO;
+import com.converter.converter.auth.entity.repository.dto.RoleDTO;
 
 import javax.persistence.*;
 import java.util.List;

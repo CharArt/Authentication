@@ -1,6 +1,6 @@
 package com.converter.converter.auth.validation;
 
-import com.converter.converter.auth.repository.dto.UserDTO;
+import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

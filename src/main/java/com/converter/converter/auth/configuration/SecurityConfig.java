@@ -2,8 +2,7 @@ package com.converter.converter.auth.configuration;
 
 import com.converter.converter.auth.jwt.JwtConfig;
 import com.converter.converter.auth.jwt.JwtConfiguration;
-import com.converter.converter.auth.jwt.JwtSecretKey;
-import com.converter.converter.auth.jwt.JwtTokenProvider;
+import com.converter.converter.auth.jwt.JwtTools;
 import com.converter.converter.auth.service.OAuth2UserServiceImpl;
 import com.converter.converter.auth.service.UserService;
 import com.converter.converter.auth.tools.OAuth2LoginSuccessHandler;
@@ -28,24 +27,23 @@ public class SecurityConfig {
     private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
     private final OAuth2UserServiceImpl OAuth2UserServiceImpl;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
-    private final JwtTokenProvider provider;
     private final UserService service;
     private final JwtConfig config;
-    private final JwtSecretKey secretKey;
+    private final JwtTools tools;
 
     @Autowired
     public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
                           OAuth2UserServiceImpl OAuth2UserServiceImpl,
                           OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler,
-                          JwtTokenProvider provider,
-                          UserService service, JwtConfig config, JwtSecretKey secretKey) {
+                          UserService service,
+                          JwtConfig config,
+                          JwtTools tools) {
         this.myBasicAuthEntryPoint = myBasicAuthEntryPoint;
         this.OAuth2UserServiceImpl = OAuth2UserServiceImpl;
         this.oAuth2LoginSuccessHandler = oAuth2LoginSuccessHandler;
-        this.provider = provider;
         this.service = service;
         this.config = config;
-        this.secretKey = secretKey;
+        this.tools = tools;
     }
 
     @Bean
@@ -82,7 +80,7 @@ public class SecurityConfig {
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .apply(new JwtConfiguration(service, config, secretKey))
+                .apply(new JwtConfiguration(service, config, tools))
                 .and()
                 .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
                 .and()

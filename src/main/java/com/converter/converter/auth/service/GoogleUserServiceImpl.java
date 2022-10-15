@@ -1,7 +1,7 @@
 package com.converter.converter.auth.service;
 
 import com.converter.converter.auth.entity.GoogleUser;
-import com.converter.converter.auth.repository.GoogleUserRepository;
+import com.converter.converter.auth.entity.repository.GoogleUserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +14,15 @@ import java.util.Objects;
 
 @Service
 @Transactional
-public class GoogleUsersServiceImpl implements GoogleUsersService {
+public class GoogleUserServiceImpl implements GoogleUsersService {
 
     private final GoogleUserRepository repository;
     private final UserService service;
 
-    private final Logger logger = LoggerFactory.getLogger(GoogleUsersServiceImpl.class);
+    private final Logger logger = LoggerFactory.getLogger(GoogleUserServiceImpl.class);
 
     @Autowired
-    public GoogleUsersServiceImpl(GoogleUserRepository repository, UserService service, RoleService roleService) {
+    public GoogleUserServiceImpl(GoogleUserRepository repository, UserService service) {
         this.repository = repository;
         this.service = service;
     }

@@ -1,4 +1,4 @@
-package com.converter.converter.auth.jwt;
+package com.converter.converter.auth.exception;
 
 import org.springframework.security.core.AuthenticationException;
 

@@ -1,7 +1,7 @@
 package com.converter.converter.auth.tools;
 
-import com.converter.converter.auth.repository.dto.RoleDTO;
-import com.converter.converter.auth.repository.dto.UserDTO;
+import com.converter.converter.auth.entity.repository.dto.RoleDTO;
+import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 

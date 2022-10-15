@@ -1,4 +1,4 @@
-package com.converter.converter.auth.repository.dto;
+package com.converter.converter.auth.entity.repository.dto;
 
 public class AuthenticationUserDTO {
     private String username;

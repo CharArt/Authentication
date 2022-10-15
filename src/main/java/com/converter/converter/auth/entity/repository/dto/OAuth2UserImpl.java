@@ -1,4 +1,4 @@
-package com.converter.converter.auth.repository.dto;
+package com.converter.converter.auth.entity.repository.dto;
 
 import com.converter.converter.auth.entity.GoogleUser;
 import org.springframework.security.core.GrantedAuthority;

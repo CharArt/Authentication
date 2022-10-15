@@ -1,4 +1,4 @@
-package com.converter.converter.auth.repository;
+package com.converter.converter.auth.entity.repository;
 
 import com.converter.converter.auth.entity.GoogleUser;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -51,6 +51,6 @@ public interface GoogleUserRepository extends JpaRepository<GoogleUser, Long> {
                             @Param("locale") String locale);
 
     @Modifying
-    @Query(value = "INSERT INTO google_users_roles (google_users_roles.google_id, google_users_roles.roles_id) VALUES(:google_id, :role_id);", nativeQuery = true)
+    @Query(value = "INSERT INTO google_users_roles (google_users_roles.google_id, google_users_roles.roles_id) VALUES(:google_id, :role_id) ;", nativeQuery = true)
     void saveRoleForGoogleUser(@Param("google_id") Long user_id, @Param("role_id") Long role_id);
 }

@@ -1,18 +1,5 @@
 package com.converter.converter.auth;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
-import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
-import org.springframework.web.client.RestTemplate;
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class mian {
 
 //    private static final OAuth2AuthorizedClientService oAuthservice;
@@ -58,10 +45,9 @@ public class mian {
 //            System.out.println(userAttributes.get("locale"));
 //        }
 //    }
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
-        String password = "Test1";
-        password = encoder.encode(password);
-        System.out.println(password);
-
+//        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+//        String password = "Test1";
+//        password = encoder.encode(password);
+//        System.out.println(password);
     }
 }

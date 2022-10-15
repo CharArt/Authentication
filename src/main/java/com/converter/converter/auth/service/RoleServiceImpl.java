@@ -1,7 +1,7 @@
 package com.converter.converter.auth.service;
 
 import com.converter.converter.auth.entity.Roles;
-import com.converter.converter.auth.repository.RolesRepository;
+import com.converter.converter.auth.entity.repository.RolesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

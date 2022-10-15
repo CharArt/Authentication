@@ -2,8 +2,8 @@ package com.converter.converter.auth.service;
 
 import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
-import com.converter.converter.auth.repository.RolesRepository;
-import com.converter.converter.auth.repository.UsersRepository;
+import com.converter.converter.auth.entity.repository.RolesRepository;
+import com.converter.converter.auth.entity.repository.UsersRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

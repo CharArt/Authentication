@@ -1,7 +1,7 @@
 package com.converter.converter.auth.entity;
 
-import com.converter.converter.auth.repository.dto.RoleDTO;
-import com.converter.converter.auth.repository.dto.UserDTO;
+import com.converter.converter.auth.entity.repository.dto.RoleDTO;
+import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

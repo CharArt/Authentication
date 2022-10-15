@@ -3,8 +3,8 @@ package com.converter.converter.auth.tools;
 import com.converter.converter.auth.entity.GoogleUser;
 import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
-import com.converter.converter.auth.repository.dto.OAuth2UserImpl;
-import com.converter.converter.auth.service.GoogleUsersServiceImpl;
+import com.converter.converter.auth.entity.repository.dto.OAuth2UserImpl;
+import com.converter.converter.auth.service.GoogleUserServiceImpl;
 import com.converter.converter.auth.service.RoleService;
 import com.converter.converter.auth.service.UserService;
 import org.slf4j.Logger;
@@ -22,13 +22,13 @@ import java.io.IOException;
 @Component
 public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 
-    private final GoogleUsersServiceImpl googleService;
+    private final GoogleUserServiceImpl googleService;
     private final UserService userService;
     private final RoleService roleService;
     private final Logger logger = LoggerFactory.getLogger(OAuth2LoginSuccessHandler.class);
 
     @Autowired
-    public OAuth2LoginSuccessHandler(GoogleUsersServiceImpl googleService,
+    public OAuth2LoginSuccessHandler(GoogleUserServiceImpl googleService,
                                      UserService userService,
                                      RoleService roleService) {
         this.googleService = googleService;

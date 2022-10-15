@@ -1,4 +1,4 @@
-package com.converter.converter.auth.repository;
+package com.converter.converter.auth.entity.repository;
 
 import com.converter.converter.auth.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;

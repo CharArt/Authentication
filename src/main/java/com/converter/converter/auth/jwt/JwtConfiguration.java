@@ -6,27 +6,26 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 public class JwtConfiguration extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {
 
-    //    private JwtTokenProvider provider;
+
     private final UserService service;
     private final JwtConfig config;
-    private final JwtSecretKey secretKey;
+    private final JwtTools tools;
 
     @Autowired
-    public JwtConfiguration(UserService service, JwtConfig config, JwtSecretKey secretKey) {
+    public JwtConfiguration(UserService service, JwtConfig config, JwtTools tools) {
         this.service = service;
         this.config = config;
-        this.secretKey = secretKey;
+        this.tools = tools;
     }
 
     @Override
     public void configure(HttpSecurity builder) throws Exception {
-//        JwtTokenFilter filter = new JwtTokenFilter(provider);
         AuthenticationManager manager = builder.getSharedObject(AuthenticationManager.class);
-        builder.addFilter(new JwtUsernameAndPasswordAuthenticationFilter(manager, config, secretKey));
-        builder.addFilterAfter(new JwtTokenVerifier(service, config, secretKey), JwtUsernameAndPasswordAuthenticationFilter.class);
-//        builder.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
+        builder.addFilter(new JwtUsernameAndPasswordAuthenticationFilter(manager, config, tools));
+        builder.addFilterAfter(new JwtTokenFilter(tools), UsernamePasswordAuthenticationFilter.class);
     }
 }

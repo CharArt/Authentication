@@ -5,7 +5,10 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import javax.persistence.*;
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 @Entity
@@ -49,7 +52,14 @@ public class GoogleUser {
     public GoogleUser() {
     }
 
-    public GoogleUser(Long user_id, String sub, String given_name, String family_name, String email, boolean email_verified, String locale, Users user) {
+    public GoogleUser(Long user_id,
+                      String sub,
+                      String given_name,
+                      String family_name,
+                      String email,
+                      boolean email_verified,
+                      String locale,
+                      Users user) {
         this.user_id = user_id;
         this.sub = sub;
         this.given_name = given_name;
