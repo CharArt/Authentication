@@ -31,7 +31,7 @@ public class UserRestAuthorization {
 
         String authorizationToken = request.getHeader(config.getRefreshTokenHeader());
         String token = authorizationToken.replace(config.getTokenPrefix(), "");
-        if (tools.ValidityRefreshTokenTime(token)) {
+        if (tools.validityRefreshTokenTime(token)) {
             Users users = service.findUserByLogin(tools.getLoginFormToken(token));
             response.addHeader(config.getAccessTokenHeader(), config.getTokenPrefix() + tools.getAccessToken(users));
             response.addHeader(config.getRefreshTokenHeader(), config.getTokenPrefix() + tools.getRefreshToken(users));

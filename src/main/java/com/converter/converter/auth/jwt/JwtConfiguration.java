@@ -6,7 +6,6 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 public class JwtConfiguration extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {
 
@@ -26,6 +25,6 @@ public class JwtConfiguration extends SecurityConfigurerAdapter<DefaultSecurityF
     public void configure(HttpSecurity builder) throws Exception {
         AuthenticationManager manager = builder.getSharedObject(AuthenticationManager.class);
         builder.addFilter(new JwtUsernameAndPasswordAuthenticationFilter(manager, config, tools));
-        builder.addFilterAfter(new JwtTokenFilter(tools), UsernamePasswordAuthenticationFilter.class);
+        builder.addFilterAfter(new JwtTokenFilter(tools), JwtUsernameAndPasswordAuthenticationFilter.class);
     }
 }

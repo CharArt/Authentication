@@ -33,13 +33,13 @@ public interface UserService extends UserDetailsService {
 
     Users getLastPerson();
 
-    void create(Users user);
-
     void deleteUserByIdAndLogin(Long id, String login);
 
     void updateUser(Users user);
 
-    void saveNewUser(Users users);
+    void saveNewUser(Users user);
 
-    void saveRoleForUser(Users users);
+    void saveRoleForUser(Users user);
+
+    Users activated(String code);
 }

@@ -1,7 +1,6 @@
  .headers{
  	grid-area:headers;
  }
-
   .container{
     height:100%;
    	display:flex;

@@ -1,6 +1,5 @@
 package com.converter.converter.auth.entity;
 
-import com.converter.converter.auth.entity.repository.dto.RoleDTO;
 import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -10,10 +9,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.StringJoiner;
@@ -51,6 +46,9 @@ public class Users implements UserDetails {
     @Column(name = "mail")
     private String mail;
 
+    @Column(name = "activated")
+    private String activated;
+
     @Column(name = "birthday")
     private Date birthday;
 
@@ -73,13 +71,7 @@ public class Users implements UserDetails {
 
     public Users(UserDTO user) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSS");
-        String time = LocalDateTime.now().format(format);
-        LocalDate ld = LocalDate.parse(time, format);
-        List<Roles> listRoles = new ArrayList<>();
-        for (RoleDTO r : user.getRoles()) {
-            listRoles.add(new Roles(r));
-        }
+
         this.login = user.getLogin();
         this.name = user.getName();
         this.surname = user.getSurname();
@@ -88,11 +80,12 @@ public class Users implements UserDetails {
         this.gender = user.getGender();
         this.phone = user.getPhone();
         this.mail = user.getMail();
+        this.activated = user.getActivated();
         this.birthday = user.getBirthday();
         this.enable = user.getEnable();
-        this.age = (ld.getYear() - birthday.toLocalDate().getYear());
-        this.createdDate = Timestamp.valueOf(time);
-        this.roles = listRoles;
+        this.age = user.getAge();
+        this.createdDate = user.getCreatedDate();
+
     }
 
     public Users() {
@@ -171,6 +164,14 @@ public class Users implements UserDetails {
         this.mail = mail;
     }
 
+    public String getActivated() {
+        return activated;
+    }
+
+    public void setActivated(String activated) {
+        this.activated = activated;
+    }
+
     public Date getBirthday() {
         return this.birthday;
     }
@@ -210,7 +211,6 @@ public class Users implements UserDetails {
     public void setCreatedDate(Timestamp createdDate) {
         this.createdDate = createdDate;
     }
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -273,10 +273,6 @@ public class Users implements UserDetails {
         return this.hashCode() == user.hashCode();
     }
 
-    public boolean isEmpty() {
-        return this.login == null || this.name == null || this.surname == null || this.mail == null;
-    }
-
     @Override
     public String toString() {
         StringJoiner joiner = new StringJoiner(", ", "{", "}");
@@ -291,5 +287,9 @@ public class Users implements UserDetails {
         joiner.add(this.phone);
         joiner.add(Integer.toString(this.age));
         return joiner.toString();
+    }
+
+    public boolean isEmpty() {
+        return this.login == null || this.name == null || this.surname == null || this.mail == null;
     }
 }

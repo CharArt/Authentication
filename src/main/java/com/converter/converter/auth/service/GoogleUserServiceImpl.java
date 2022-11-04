@@ -36,7 +36,7 @@ public class GoogleUserServiceImpl implements GoogleUsersService {
     @Override
     public GoogleUser findUserBySub(String sub) {
         logger.info("Start_Method_findUserBySub(" + sub + ")");
-        return repository.findGoogleUserBySub(sub).orElseThrow(EntityNotFoundException::new);
+        return repository.findGoogleUserBySub(sub).orElse(new GoogleUser());
     }
 
     @Override

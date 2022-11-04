@@ -1,0 +1,853 @@
+2022-11-02 21:51:44.594 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12220 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 21:51:44.595 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 21:51:51.406 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 7.343 seconds (JVM running for 10.82)
+2022-11-02 21:53:54.915 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 21:53:55.005 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 21:53:55.236 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.238 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 21:53:55.248 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.250 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 21:53:55.262 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.263 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 21:53:55.264 [http-nio-8080-exec-9] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 21:53:55.280 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 21:53:55.280 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 21:53:55.284 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.285 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 21:53:55.289 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.290 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 21:53:55.294 [http-nio-8080-exec-9] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 21:53:55.294 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:00:33.485 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9040 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:00:33.486 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:00:37.610 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.402 seconds (JVM running for 4.869)
+2022-11-02 22:00:43.157 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:00:43.201 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:00:43.353 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.354 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:00:43.365 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.366 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:00:43.371 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.371 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:00:43.373 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:00:43.383 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:00:43.384 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:00:43.389 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.390 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:00:43.394 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.395 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:00:43.398 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:00:43.398 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:11:22.803 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 936 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:11:22.804 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:11:27.800 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.355 seconds (JVM running for 5.822)
+2022-11-02 22:11:30.101 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:11:30.144 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:11:30.306 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.307 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:11:30.323 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.325 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:11:30.336 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.337 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:11:30.342 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:11:30.354 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:11:30.355 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:11:30.359 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.360 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:11:30.363 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.365 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:11:30.368 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:30.369 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:11:45.718 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17756 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:11:45.720 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:11:50.104 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.669 seconds (JVM running for 5.099)
+2022-11-02 22:11:54.216 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:11:54.271 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:11:54.402 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.403 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:11:54.409 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.411 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:11:54.416 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.416 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:11:54.417 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:11:54.431 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:11:54.432 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:11:54.437 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.438 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:11:54.442 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.443 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:11:54.448 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:11:54.448 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:01.230 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 13636 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:14:01.231 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:14:05.571 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.629 seconds (JVM running for 5.073)
+2022-11-02 22:14:10.059 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:10.117 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:10.262 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:10.264 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:10.276 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:10.278 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:10.288 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:10.289 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:10.291 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:14:10.307 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:10.308 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:10.315 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:10.316 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:10.323 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:10.325 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:10.331 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:10.331 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:15.961 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:15.999 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:16.021 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:16.022 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:16.032 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:16.033 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:16.041 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:16.042 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:16.042 [http-nio-8080-exec-10] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:14:16.049 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:16.050 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:16.056 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:16.058 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:16.063 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:16.064 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:16.070 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:16.070 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:54.603 [http-nio-8080-exec-8] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:54.626 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:54.632 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:54.634 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:54.638 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:54.638 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:54.643 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:54.643 [http-nio-8080-exec-8] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:14:54.643 [http-nio-8080-exec-8] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:14:54.646 [http-nio-8080-exec-8] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:14:54.647 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:14:54.650 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:14:54.651 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:14:54.656 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:14:54.657 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:14:54.660 [http-nio-8080-exec-8] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:14:54.660 [http-nio-8080-exec-8] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:16:28.936 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20536 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:16:28.937 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:16:32.935 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.311 seconds (JVM running for 4.783)
+2022-11-02 22:17:02.656 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20944 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:17:02.657 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:17:07.751 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.54 seconds (JVM running for 6.061)
+2022-11-02 22:17:38.003 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:17:38.083 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:17:38.328 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:17:38.330 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:17:38.342 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:17:38.344 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:17:38.355 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:17:38.355 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:17:38.360 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:17:38.380 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:17:38.381 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:17:38.387 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:17:38.388 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:17:38.393 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:17:38.394 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:17:38.397 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:17:38.398 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:17:53.183 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 8940 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:17:53.186 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:17:57.365 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.474 seconds (JVM running for 4.901)
+2022-11-02 22:18:22.073 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:18:22.143 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:18:22.307 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:18:22.309 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:18:22.314 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:18:22.315 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:18:22.320 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:18:22.320 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:18:22.325 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:18:22.340 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:18:22.340 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:18:22.347 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:18:22.348 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:18:22.351 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:18:22.352 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:18:22.356 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:18:22.356 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:19:44.868 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 924 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:19:44.868 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:19:49.183 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.624 seconds (JVM running for 5.082)
+2022-11-02 22:19:57.681 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9176 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:19:57.682 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:20:02.116 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.798 seconds (JVM running for 5.299)
+2022-11-02 22:20:09.011 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:20:09.056 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:20:09.221 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:20:09.236 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:20:09.248 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:20:09.254 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:20:09.273 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:20:09.275 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:20:09.282 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:20:09.290 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:20:09.296 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:22:34.834 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18312 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:22:34.835 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:22:39.317 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.771 seconds (JVM running for 5.206)
+2022-11-02 22:22:53.773 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 10720 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:22:53.774 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:22:58.094 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.614 seconds (JVM running for 5.083)
+2022-11-02 22:23:11.996 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18736 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:23:11.997 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:23:16.806 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.108 seconds (JVM running for 5.582)
+2022-11-02 22:23:21.483 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:23:21.523 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:23:21.621 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:23:21.629 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:23:21.636 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:23:21.638 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:23:21.650 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:23:21.651 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:23:21.655 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:23:21.659 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:23:21.662 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:24:51.875 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17348 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:24:51.875 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:24:56.090 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.516 seconds (JVM running for 4.995)
+2022-11-02 22:25:01.614 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:25:01.668 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:25:01.832 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:25:01.844 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:25:01.853 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:25:01.858 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:25:01.875 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:25:01.875 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:25:01.879 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:25:01.881 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:25:01.884 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:25:13.663 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 13216 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:25:13.664 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:25:18.108 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.753 seconds (JVM running for 5.242)
+2022-11-02 22:25:56.320 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17476 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:25:56.321 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:26:00.667 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.662 seconds (JVM running for 5.21)
+2022-11-02 22:26:06.584 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:26:06.639 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:26:06.770 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:26:06.771 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:26:06.781 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:26:06.783 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:26:06.791 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:26:06.791 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:26:06.794 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:26:06.818 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:26:06.818 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:26:06.822 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:26:06.822 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 22:26:06.826 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:26:06.826 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 22:26:06.829 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This number use already!
+2022-11-02 22:26:06.829 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:26:37.296 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20036 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:26:37.297 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:26:41.492 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.476 seconds (JVM running for 5.01)
+2022-11-02 22:26:45.431 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:26:45.481 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:26:45.599 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:26:45.600 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav1@gmail.com)
+2022-11-02 22:44:48.635 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 14912 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:44:48.636 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:44:54.032 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.701 seconds (JVM running for 6.252)
+2022-11-02 22:45:50.587 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:45:50.641 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:45:50.744 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:45:50.744 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:45:50.744 [http-nio-8080-exec-10] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:46:21.309 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17268 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:46:21.311 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:46:25.560 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.556 seconds (JVM running for 5.042)
+2022-11-02 22:46:31.280 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:46:31.437 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:46:31.450 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:46:31.488 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This user exists already!
+2022-11-02 22:46:31.488 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 22:58:05.755 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17896 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 22:58:05.756 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 22:58:10.107 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.661 seconds (JVM running for 5.116)
+2022-11-02 22:58:19.909 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 22:58:20.062 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 22:58:20.062 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 22:58:20.075 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 22:58:20.119 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 22:58:20.120 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new login!
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login is empty!
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 22:58:20.121 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 22:58:20.126 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 22:58:20.127 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 22:58:24.800 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 22:58:24.802 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 22:58:24.814 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 22:58:24.815 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 22:58:24.816 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login is empty!
+2022-11-02 22:58:24.816 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 22:58:24.816 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:02:07.243 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9508 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:02:07.244 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:02:11.706 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.77 seconds (JVM running for 5.276)
+2022-11-02 23:02:17.030 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:02:17.177 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:02:17.177 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:02:17.184 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:02:17.221 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:02:17.222 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:02:17.222 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:02:17.223 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:02:17.231 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:02:17.233 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:02:19.961 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:02:19.964 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:02:19.980 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:02:19.982 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:02:19.982 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:03:33.845 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16960 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:03:33.846 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:03:38.359 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.808 seconds (JVM running for 5.284)
+2022-11-02 23:03:50.680 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:03:50.805 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:03:50.805 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:03:50.818 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:03:50.849 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:03:50.850 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:03:50.850 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:03:50.851 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:03:50.858 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:03:50.858 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:03:53.929 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:03:53.940 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:03:53.950 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:03:53.951 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:03:53.951 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:06:20.026 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16172 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:06:20.027 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:06:24.260 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.522 seconds (JVM running for 4.998)
+2022-11-02 23:06:24.626 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:06:24.741 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:06:24.741 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:06:24.756 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:06:24.786 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:06:24.787 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:06:24.787 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:06:24.788 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:06:24.797 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:06:24.798 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:06:27.544 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:06:27.547 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:06:27.561 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:06:27.562 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:06:27.562 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:07:06.165 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 21116 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:07:06.167 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:07:10.519 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.673 seconds (JVM running for 5.107)
+2022-11-02 23:07:12.166 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:07:12.301 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:07:12.301 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:07:12.315 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:07:12.344 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:07:12.344 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:07:12.344 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:07:12.345 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:07:12.352 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:07:12.352 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:07:14.853 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:07:14.855 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:07:14.866 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:07:14.867 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:07:14.867 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:08:10.518 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12884 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:08:10.519 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:08:14.789 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.55 seconds (JVM running for 5.004)
+2022-11-02 23:08:15.197 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:08:15.334 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:08:15.334 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:08:15.357 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:08:15.416 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:08:15.417 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:08:15.417 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:08:15.417 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:08:15.424 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:08:15.424 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:08:17.699 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:08:17.701 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:08:17.710 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:08:17.711 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:08:17.711 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:09:04.187 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 21352 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:09:04.188 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:09:08.637 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.734 seconds (JVM running for 5.199)
+2022-11-02 23:09:13.798 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:09:13.941 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:09:13.941 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:09:13.953 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:09:13.987 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:09:13.988 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:09:13.988 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:09:13.989 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:09:13.998 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:09:13.999 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:09:16.459 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:09:16.462 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:09:16.475 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:09:16.476 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:09:16.476 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:10:00.981 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 14036 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:10:00.982 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:10:04.854 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.131 seconds (JVM running for 4.556)
+2022-11-02 23:10:09.518 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:10:09.662 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:10:09.662 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:10:09.682 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:10:09.720 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:10:09.720 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:10:09.720 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:10:09.721 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:10:09.730 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:10:09.730 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:10:12.316 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:10:12.318 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:10:12.331 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:10:12.332 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:10:12.332 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:11:03.039 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 11424 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:11:03.041 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:11:07.556 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.821 seconds (JVM running for 5.253)
+2022-11-02 23:11:11.565 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:11:11.681 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:11:11.682 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:11:11.701 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:11:11.732 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:11:11.733 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:11:11.733 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:11:11.734 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:11:11.740 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:11:11.740 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:11:13.901 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:11:13.904 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:11:13.921 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:11:13.922 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:11:13.922 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:11:37.427 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 2124 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:11:37.428 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:11:41.762 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.636 seconds (JVM running for 5.035)
+2022-11-02 23:11:50.196 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:11:50.311 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:11:50.311 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:11:50.324 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:11:50.352 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:11:50.352 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:11:50.352 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:11:50.353 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:11:50.358 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:11:50.358 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:11:52.588 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:11:52.591 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:11:52.603 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:11:52.604 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:11:52.604 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:12:09.573 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 6112 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:12:09.574 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:12:13.744 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.45 seconds (JVM running for 4.94)
+2022-11-02 23:12:15.285 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:12:15.424 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:12:15.424 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:12:15.439 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:12:15.463 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:12:15.464 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:12:15.464 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:12:15.465 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:12:15.472 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:12:15.472 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:12:17.717 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:12:17.719 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:12:17.728 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:12:17.728 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:12:17.728 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:12:32.085 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12572 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:12:32.086 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:12:36.428 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.645 seconds (JVM running for 5.08)
+2022-11-02 23:12:39.928 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:12:40.067 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:12:40.068 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:12:40.075 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:12:40.113 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:12:40.114 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:12:40.114 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:12:40.115 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:12:40.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:12:40.121 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:12:42.211 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:12:42.214 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:12:42.226 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:12:42.227 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:12:42.227 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:12:55.034 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 19260 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:12:55.035 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:12:59.413 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.668 seconds (JVM running for 5.114)
+2022-11-02 23:13:01.151 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:13:01.261 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:13:01.261 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:13:01.280 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:13:01.324 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:13:01.324 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:13:01.324 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:13:01.325 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:13:01.329 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:13:01.330 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:13:03.428 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:13:03.430 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:13:03.435 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:13:03.435 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:13:03.435 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:13:17.058 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 5068 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:13:17.059 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:13:20.944 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.171 seconds (JVM running for 4.61)
+2022-11-02 23:13:26.716 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:13:26.829 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:13:26.829 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:13:26.840 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:13:26.873 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:13:26.873 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:13:26.873 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:13:26.874 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:13:26.879 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:13:26.879 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:13:29.244 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:13:29.246 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:13:29.257 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:13:29.258 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:13:29.258 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:14:39.094 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 15740 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:14:39.095 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:14:43.374 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.596 seconds (JVM running for 5.05)
+2022-11-02 23:14:51.599 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:14:51.775 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:14:51.775 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:14:51.784 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:14:51.825 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:14:51.827 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:14:51.827 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:14:51.828 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:14:51.833 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:14:51.834 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:14:54.231 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:14:54.233 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:14:54.249 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:14:54.250 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:14:54.250 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:21:15.985 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 13112 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:21:15.986 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:21:20.147 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.438 seconds (JVM running for 4.938)
+2022-11-02 23:21:20.626 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:21:20.753 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:21:20.754 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:21:20.772 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:21:20.804 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:21:20.805 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:21:20.805 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:21:20.806 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:21:20.814 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:21:20.814 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:21:23.417 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:21:23.419 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:21:23.432 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:21:23.433 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:21:23.434 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:26:05.564 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16104 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:26:05.565 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:26:09.933 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.643 seconds (JVM running for 5.124)
+2022-11-02 23:26:12.514 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:26:12.624 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:26:12.625 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:26:12.640 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:26:12.670 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:26:12.671 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:26:12.671 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:26:12.672 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:26:12.677 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:26:12.677 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:26:15.074 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:26:15.077 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:26:15.086 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:26:15.087 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:26:15.087 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:26:43.064 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 21492 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:26:43.065 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:26:47.474 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.72 seconds (JVM running for 5.277)
+2022-11-02 23:26:52.677 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:26:52.860 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:26:52.860 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:26:52.873 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:26:52.908 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:26:52.909 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:26:52.909 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:26:52.910 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:26:52.915 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:26:52.916 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:26:54.960 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:26:54.964 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:26:54.977 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:26:54.979 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:26:54.979 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:27:42.260 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12504 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:27:42.261 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:27:46.697 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.703 seconds (JVM running for 5.168)
+2022-11-02 23:27:47.064 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:27:47.208 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:27:47.208 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:27:47.216 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:27:47.241 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:27:47.242 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:27:47.242 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:27:47.242 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:27:47.247 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:27:47.247 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:27:49.497 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:27:49.500 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:27:49.509 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:27:49.510 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:27:49.510 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:29:21.621 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 14548 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:29:21.622 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:29:25.878 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.543 seconds (JVM running for 5.125)
+2022-11-02 23:29:32.349 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:29:32.612 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:29:32.613 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:29:32.631 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:29:32.678 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:29:32.680 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:29:32.680 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:29:32.681 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:29:32.690 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:29:32.690 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:29:34.964 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:29:34.966 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:29:34.981 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:29:34.982 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:29:34.982 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:29:52.613 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16208 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:29:52.614 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:29:57.025 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.716 seconds (JVM running for 5.184)
+2022-11-02 23:30:05.692 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:30:05.828 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:30:05.828 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:30:05.840 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:30:05.879 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:30:05.880 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:30:05.880 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:30:05.881 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:30:05.886 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:30:05.886 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:30:08.008 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:30:08.010 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:30:08.026 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:30:08.027 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:30:08.028 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:30:57.443 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17036 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:30:57.443 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:31:02.804 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.622 seconds (JVM running for 6.075)
+2022-11-02 23:31:10.607 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:31:10.719 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:31:10.719 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:31:10.736 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:31:10.776 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:31:10.777 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:31:10.777 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:31:10.778 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:31:10.788 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:31:10.789 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:31:12.846 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:31:12.849 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:31:12.862 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:31:12.863 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:31:12.863 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:31:40.715 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20496 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:31:40.715 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:31:44.853 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.455 seconds (JVM running for 4.914)
+2022-11-02 23:31:49.387 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:31:49.533 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:31:49.534 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:31:49.557 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:31:49.595 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:31:49.596 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:31:49.596 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:31:49.596 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:31:49.602 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:31:49.603 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:31:51.844 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:31:51.847 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:31:51.859 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:31:51.860 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:31:51.860 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:32:06.420 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 2740 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:32:06.421 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:32:11.009 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.873 seconds (JVM running for 5.319)
+2022-11-02 23:32:16.121 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:32:16.241 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:32:16.241 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:32:16.260 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:32:16.298 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:32:16.298 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:32:16.298 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:32:16.299 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test@yandex.ru)
+2022-11-02 23:32:16.307 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:32:16.307 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:32:18.347 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:32:18.350 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000012)
+2022-11-02 23:32:18.365 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:32:18.366 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:32:18.366 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:33:26.462 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 15368 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:33:26.463 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:33:31.209 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.021 seconds (JVM running for 5.506)
+2022-11-02 23:34:23.832 [http-nio-8080-exec-10] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:34:24.075 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:34:24.075 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:34:24.091 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:34:24.142 [http-nio-8080-exec-10] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:34:24.144 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:34:24.144 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:34:24.146 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test1@gmail.com)
+2022-11-02 23:34:24.157 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:34:24.157 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:34:26.449 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:34:26.451 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000013)
+2022-11-02 23:34:26.466 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:34:26.466 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:34:26.467 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:35:10.728 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 2132 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:35:10.735 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:35:15.296 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.923 seconds (JVM running for 5.429)
+2022-11-02 23:35:17.281 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:35:17.398 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:35:17.398 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:35:17.414 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:35:17.446 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:35:17.447 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:35:17.447 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:35:17.448 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(Test1@gmail.com)
+2022-11-02 23:35:17.454 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new email!
+2022-11-02 23:35:17.454 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:35:20.091 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:35:20.094 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(00000000013)
+2022-11-02 23:35:20.108 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - This new phone!
+2022-11-02 23:35:20.109 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:35:20.109 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:35:44.395 [http-nio-8080-exec-2] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:35:44.425 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:35:44.425 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:35:44.426 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:35:44.442 [http-nio-8080-exec-2] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:35:44.442 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:35:44.443 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:35:44.444 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:35:44.448 [http-nio-8080-exec-2] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:35:44.449 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:35:44.449 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:35:44.450 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:35:44.456 [http-nio-8080-exec-2] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:35:44.456 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:35:44.456 [http-nio-8080-exec-2] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:42:25.048 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 19192 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:42:25.049 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:42:29.751 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.996 seconds (JVM running for 5.494)
+2022-11-02 23:42:37.646 [http-nio-8080-exec-3] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:42:37.772 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:42:37.772 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:42:37.787 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:42:37.820 [http-nio-8080-exec-3] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:42:37.820 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:42:37.820 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:42:37.821 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:42:37.829 [http-nio-8080-exec-3] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:42:37.829 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:42:37.829 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:42:37.830 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:42:37.837 [http-nio-8080-exec-3] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:42:37.837 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:42:37.837 [http-nio-8080-exec-3] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:43:38.123 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9120 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:43:38.125 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:43:42.291 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.475 seconds (JVM running for 4.995)
+2022-11-02 23:43:47.518 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:43:47.649 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:43:47.649 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:43:47.660 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:43:47.699 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:43:47.700 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:43:47.700 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:43:47.701 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:43:47.706 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:43:47.707 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:43:47.707 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:43:47.707 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:43:47.715 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:43:47.716 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:43:47.716 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:44:17.300 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9848 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:44:17.301 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:44:21.450 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.462 seconds (JVM running for 4.939)
+2022-11-02 23:44:25.600 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:44:25.756 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:44:25.757 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:44:25.768 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:44:25.801 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:44:25.802 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:44:25.802 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:44:25.803 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:44:25.808 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:44:25.809 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:44:25.809 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:44:25.809 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:44:25.818 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:44:25.818 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:44:25.818 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:44:39.743 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 14204 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:44:39.745 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:44:44.473 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.075 seconds (JVM running for 5.515)
+2022-11-02 23:44:47.006 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:44:47.142 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:44:47.142 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:44:47.154 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:44:47.188 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:44:47.189 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:44:47.189 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:44:47.189 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:44:47.198 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:44:47.198 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:44:47.198 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:44:47.199 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:44:47.205 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:44:47.205 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:44:47.205 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator
+2022-11-02 23:45:38.628 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 18704 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-02 23:45:38.629 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-02 23:45:42.856 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.517 seconds (JVM running for 4.988)
+2022-11-02 23:45:46.898 [http-nio-8080-exec-1] INFO  c.c.c.auth.controllers.RegistrationController - -Start_Method_checkUserInfo
+2022-11-02 23:45:47.059 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-11-02 23:45:47.060 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkLogin
+2022-11-02 23:45:47.072 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-02 23:45:47.101 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This login use already!
+2022-11-02 23:45:47.102 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkLogin
+2022-11-02 23:45:47.102 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkEmail
+2022-11-02 23:45:47.102 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-02 23:45:47.110 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This email use already!
+2022-11-02 23:45:47.111 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkEmail
+2022-11-02 23:45:47.112 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start checkPhone
+2022-11-02 23:45:47.112 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByPhone(89015891274)
+2022-11-02 23:45:47.118 [http-nio-8080-exec-1] ERROR c.c.converter.auth.validation.CustomUsersValidator - This phone use already!
+2022-11-02 23:45:47.119 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End checkPhone
+2022-11-02 23:45:47.119 [http-nio-8080-exec-1] INFO  c.c.converter.auth.validation.CustomUsersValidator - End user validator

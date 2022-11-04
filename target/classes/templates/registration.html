@@ -18,61 +18,65 @@
 
 </head>
 
-<body class="grid-box">
+    <body class="grid-box">
 
-<div class="headers" th:insert="~{header.html :: header}"></div>
+        <div class="headers" th:insert="~{header.html :: header}"></div>
 
-<div class="left"></div>
+        <div class="left"></div>
 
-<div class="middle">
-    <h2>Your details:</h2>
-    <form class="form-grid-container" action="#" th:action="@{/registration}" th:object="${user}" method="post">
-        <div class="text-layer">
-            <label name="login" for="login">Login:</label>
-            <!--            <p class="errors" for="login" th:if="${#fields.hasErrors('login')}" th:errors="*{login}"></p>-->
-            <label for="firstName">First name:</label>
-            <label for="lastName">Last name:</label>
-            <label for="patronymic">Patronymic:</label>
-            <label for="birthday">Birthday:</label>
-            <label name="mail" for="mail">Emal:</label>
-            <!--            <p class="errors" for="mail" th:if="${#fields.hasErrors('mail')}" th:errors="*{mail}"></p>-->
-            <label for="phone">Phone:</label>
-            <label for="password">Password:</label>
+        <div class="middle">
+            <h3>Your details:</h3>
+            <form class="form-grid-container" action="#" th:action="@{/registration}" th:object="${user}" method="post">
+                <div class="text-layer">
+                    <label name="login" for="login">Login:</label>
+                    <label for="firstName">First name:</label>
+                    <label for="lastName">Last name:</label>
+                    <label for="patronymic">Patronymic:</label>
+                    <label name="gender" for="gender">Sex:</label>
+                    <label for="birthday">Birthday:</label>
+                    <label name="mail" for="mail">Emal:</label>
+                    <label for="phone">Phone:</label>
+                    <label for="password">Password:</label>
+                </div>
+
+                <div class="field-layer">
+                    <input class="field-reg" th:errorclass="field-rerError" type="text" id="login" th:field="*{login}" placeholder="Your login..">
+
+                    <input class="field-reg" type="text" id="firstName" th:field="*{name}" placeholder="Your first name.." required>
+
+                    <input class="field-reg" type="text" id="lastName" th:field="*{surname}" placeholder="Your surname .." required>
+
+                    <input class="field-reg" type="text" id="patronymic" th:field="*{patronymic}" placeholder="Your patronymic.." required>
+
+                    <select class="field-reg" th:field="*{gender}" id="gender">
+                        <option th:value="'mail'" th:text="male"></option>
+                        <option th:value="'female'" th:text="female"></option>
+                    </select>
+
+                    <input class="field-reg" type="date" id="birthday" th:field="*{birthday}" required>
+
+                    <input class="field-reg" th:errorclass="field-rerError" type="email" id="mail" th:field="*{mail}" placeholder="Your mail.." required>
+
+                    <input class="field-reg" th:errorclass="field-rerError" type="text" id="phone" th:field="*{phone}" placeholder="Your phone.." required>
+
+                    <input class="field-reg" type="password" id="password" th:field="*{password}" placeholder="Your password.." required>
+                </div>
+
+                <div class="button-layer">
+                    <button class="btn-reg" type="submit" id="Registration">Registration</button>
+                    <input class="btn-reg" type="button" id="Back" value="Back" onClick='location.href="http://localhost:8080/login"'>
+                </div>
+            </form>
         </div>
 
-        <div class="field-layer">
-            <input class="field-reg" type="text" id="login" th:field="*{login}" placeholder="Your login..">
-
-            <input class="field-reg" type="text" id="firstName" th:field="*{name}" placeholder="Your first name.." required>
-
-            <input class="field-reg" type="text" id="lastName" th:field="*{surname}" placeholder="Your surname .." required>
-
-            <input class="field-reg" type="text" id="patronymic" th:field="*{patronymic}" placeholder="Your patronymic.." required>
-
-            <input class="date-reg" type="date" id="birthday" th:field="*{birthday}" required>
-
-            <input class="field-reg" type="email" id="mail" th:field="*{mail}" placeholder="Your mail.." required>
-
-            <input class="field-reg" type="text" id="phone" th:field="*{phone}" placeholder="Your phone.." required>
-
-            <input class="field-reg" type="password" id="password" th:field="*{password}" placeholder="Your password.." required>
+        <div class="right">
+            <form action="#" th:action="@{/registration}" th:object="${user}" method="post">
+                <div class="errors" th:if="${#fields.hasErrors('*')}">
+                    <p class="error" th:each="err : ${#fields.errors('*')}" th:text="${err}"></p>
+                </div>
+            </form>
         </div>
 
-        <div class="button-layer">
-            <button class="btn-reg" type="submit" id="Registration">Registration</button>
-            <input class="btn-reg" type="button" id="Back" value="Back" onClick='location.href="http://localhost:8080/login"'>
-        </div>
-    </form>
-</div>
-
-<div class="right">
-    <form class="form-grid-container" action="#" th:action="@{/registration}" th:object="${user}" method="post">
-        <div class="alert alert-danger" th:if="${#fields.hasErrors('*')}">
-            <p th:each="err : ${#fields.errors('*')}" th:text="${err}"></p>
-        </div>
-    </form>
-</div>
-
-<div class="footer" th:insert="~{footer.html :: footer}"></div>
-</body>
+        <div class="footer" th:insert="~{footer.html :: footer}"></div>
+    </body>
 </html>

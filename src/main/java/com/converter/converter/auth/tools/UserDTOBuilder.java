@@ -20,6 +20,7 @@ public class UserDTOBuilder {
     private String gender;
     private String phone;
     private String mail;
+    private String activated;
     private Date birthday;
     private int age;
     private boolean enable;
@@ -67,6 +68,11 @@ public class UserDTOBuilder {
 
     public UserDTOBuilder setMail(String mail) {
         this.mail = mail;
+        return this;
+    }
+
+    public UserDTOBuilder setActivated(String activated) {
+        this.activated = activated;
         return this;
     }
 
@@ -130,6 +136,10 @@ public class UserDTOBuilder {
 
     public String getMail() {
         return mail;
+    }
+
+    public String getActivated() {
+        return activated;
     }
 
     public Date getBirthday() {

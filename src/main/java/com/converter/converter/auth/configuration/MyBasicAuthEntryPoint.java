@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @Component
-public class MyBasicAuthEntityPoint extends BasicAuthenticationEntryPoint{
+public class MyBasicAuthEntryPoint extends BasicAuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
-        response.addHeader("WWW-Authenticate", "Basic realm=" + getRealmName() + "");
-        response.addHeader("WWW-Authenticate", "Bearer " + getRealmName() + "");
+        response.addHeader("WWW-Authentication", "Basic realm=" + getRealmName() + "");
+        response.addHeader("WWW-Authentication", "Bearer " + getRealmName() + "");
         response.addHeader("Content-Type", "application/json");
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         PrintWriter writer = response.getWriter();

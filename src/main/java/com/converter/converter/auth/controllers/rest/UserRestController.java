@@ -21,7 +21,6 @@ public class UserRestController {
     private final UserService userService;
     private final CustomUserDTOValidator validator;
 
-
     @Autowired
     public UserRestController(UserService userService,
                               CustomUserDTOValidator validator) {
@@ -143,8 +142,10 @@ public class UserRestController {
             return HttpStatus.BAD_REQUEST;
         }
         Users user = new Users(userDTO);
+
         userService.saveNewUser(user);
         userService.saveRoleForUser(user);
+
         return HttpStatus.OK;
     }
 

@@ -15,7 +15,6 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
@@ -24,7 +23,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @ComponentScan("com.converter.converter.auth")
 public class SecurityConfig {
-    private final MyBasicAuthEntityPoint myBasicAuthEntryPoint;
+    private final MyBasicAuthEntryPoint myBasicAuthEntryPoint;
     private final OAuth2UserServiceImpl OAuth2UserServiceImpl;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
     private final UserService service;
@@ -32,7 +31,7 @@ public class SecurityConfig {
     private final JwtTools tools;
 
     @Autowired
-    public SecurityConfig(MyBasicAuthEntityPoint myBasicAuthEntryPoint,
+    public SecurityConfig(MyBasicAuthEntryPoint myBasicAuthEntryPoint,
                           OAuth2UserServiceImpl OAuth2UserServiceImpl,
                           OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler,
                           UserService service,
@@ -62,31 +61,30 @@ public class SecurityConfig {
         https
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/user/login").permitAll()
-                .antMatchers("/oauth2/**").permitAll()
-                .antMatchers("/home").permitAll()
+                .antMatchers("/oauth2/**", "/api/user/login", "/home", "/activated/*").permitAll()
                 .antMatchers("/hello").hasAnyRole("USER", "ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/{id}").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/NSP").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/Email").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/Gender").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/Phone").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/Age").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/api/user/Enable").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.POST, "/api/user/Save").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/api/user/Update").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.DELETE, "/api/user/Delete").hasAnyRole("ADMIN")
-                .and()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .apply(new JwtConfiguration(service, config, tools))
-                .and()
-                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint)
+                .antMatchers(HttpMethod.GET, "/api/user/").hasRole("ADMIN")
+                .mvcMatchers(HttpMethod.GET, "/api/user/{id}").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/NSP").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Email").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Gender").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Phone").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Age").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/user/Enable").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/api/user/Save").hasRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/api/user/Update").hasRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/api/user/Delete").hasRole("ADMIN")
                 .and()
                 .formLogin().loginPage("/login")
                 .defaultSuccessUrl("/hello")
                 .failureForwardUrl("/login").permitAll()
+                .and()
+                .logout().logoutUrl("/logout").permitAll()
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
+                .invalidateHttpSession(true)
+                .clearAuthentication(true)
+                .deleteCookies("JSESSIONID")
+                .logoutSuccessUrl("/login")
                 .and()
                 .oauth2Login()
                 .loginPage("/login")
@@ -95,12 +93,11 @@ public class SecurityConfig {
                 .failureUrl("/login").permitAll()
                 .successHandler(oAuth2LoginSuccessHandler)
                 .and()
-                .logout().logoutUrl("/logout").permitAll()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
-                .invalidateHttpSession(true)
-                .clearAuthentication(true)
-                .deleteCookies("JSESSIONID")
-                .logoutSuccessUrl("/login");
+                .apply(new JwtConfiguration(service, config, tools))
+                .and()
+                .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint);
+//                .and()
+//                .oauth2ResourceServer().jwt();
         return https.build();
     }
 }

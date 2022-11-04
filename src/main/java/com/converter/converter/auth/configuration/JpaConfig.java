@@ -23,7 +23,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @EnableJpaRepositories("com.converter.converter.auth.repository")
 public class JpaConfig {
-    private static final String URL = "jdbc:sqlserver://localhost;DatabaseName=users_roles_db;integratedSecurity=false;" +
+    private static final String URL = "jdbc:sqlserver://localhost;DatabaseName=AuthenticationApplication;integratedSecurity=false;" +
             "encrypt=false;trustServerCertificate=false";
     private static final String LOGIN = "Artem";
     private static final String PASSWORD = "1234567";

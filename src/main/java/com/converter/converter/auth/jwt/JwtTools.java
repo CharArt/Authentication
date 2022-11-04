@@ -77,7 +77,7 @@ public class JwtTools {
                 .compact();
     }
 
-    public boolean ValidityRefreshTokenTime(String token) {
+    public boolean validityRefreshTokenTime(String token) {
         logger.info("Start method ValidityRefreshTokenTime");
         Jws<Claims> claims = Jwts.parserBuilder().setSigningKey(secretKey.secretKey()).build().parseClaimsJws(token);
         if (!claims.getBody().getIssuedAt().before(new Date())) {
@@ -87,7 +87,7 @@ public class JwtTools {
         return false;
     }
 
-    public boolean ValidityAccessTokenTime(String token) {
+    public boolean validityAccessTokenTime(String token) {
         logger.info("Start method ValidityAccessTokenTime");
         Jws<Claims> claims = Jwts.parserBuilder().setSigningKey(secretKey.secretKey()).build().parseClaimsJws(token);
         if (!claims.getBody().getIssuedAt().before(new Date())) {
@@ -101,10 +101,10 @@ public class JwtTools {
         return Jwts.parserBuilder().setSigningKey(secretKey.secretKey()).build().parseClaimsJws(token).getBody().getSubject();
     }
 
-    public Authentication ValidityToken(HttpServletRequest request) {
+    public Authentication validityToken(HttpServletRequest request) {
         String authorizationToken = request.getHeader(config.getAuthorizationHeader());
         String token = authorizationToken.replace(config.getTokenPrefix(), "");
-        if (ValidityAccessTokenTime(token)) {
+        if (validityAccessTokenTime(token)) {
             UserDetails user = service.loadUserByUsername(getLoginFormToken(token));
             return new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
         } else {

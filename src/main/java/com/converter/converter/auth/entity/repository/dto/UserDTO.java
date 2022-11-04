@@ -1,6 +1,5 @@
 package com.converter.converter.auth.entity.repository.dto;
 
-import com.converter.converter.auth.entity.Roles;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.tools.UserDTOBuilder;
 import org.springframework.stereotype.Component;
@@ -11,7 +10,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -50,6 +48,8 @@ public class UserDTO {
     @NotNull
     private String mail;
 
+    private String activated;
+
     @Past
     private Date birthday;
 
@@ -76,6 +76,7 @@ public class UserDTO {
         this.gender = user.getGender();
         this.phone = user.getPhone();
         this.mail = user.getMail();
+        this.activated = user.getActivated();
         this.birthday = user.getBirthday();
         this.age = user.getAge();
         this.enable = user.isEnable();
@@ -96,16 +97,17 @@ public class UserDTO {
         this.gender = user.getGender();
         this.phone = user.getPhone();
         this.mail = user.getMail();
+        this.activated = user.getActivated();
         this.birthday = user.getBirthday();
         this.age = user.getAge();
         this.enable = user.getEnable();
         this.createdDate = user.getCreatedDate();
-        List<RoleDTO> listRoles = new ArrayList<>();
-        for (Roles rol : user.getRoles()) {
-            RoleDTO r = new RoleDTO(rol);
-            listRoles.add(r);
-        }
-        this.roles = listRoles;
+//        List<RoleDTO> listRoles = new ArrayList<>();
+//        for (Roles rol : user.getRoles()) {
+//            RoleDTO r = new RoleDTO(rol);
+//            listRoles.add(r);
+//        }
+//        this.roles = listRoles;
     }
 
     public Long getId() {
@@ -142,6 +144,10 @@ public class UserDTO {
 
     public String getMail() {
         return mail;
+    }
+
+    public String getActivated() {
+        return activated;
     }
 
     public Date getBirthday() {
@@ -198,17 +204,10 @@ public class UserDTO {
                 .add(name)
                 .add(surname)
                 .add(patronymic)
+                .add(mail)
                 .add(gender)
                 .add(phone)
-                .add(mail)
-                .add(birthday.toString())
-                .add(Integer.toString(age))
-                .add(enable.toString())
-                .add(createdDate.toString());
-        for (RoleDTO role : roles) {
-            joiner.add(role.getId().toString())
-                    .add(role.getRole());
-        }
+                .add(Integer.toString(age));
         return joiner.toString();
     }
 

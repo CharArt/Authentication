@@ -10,11 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityExistsException;
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
@@ -139,16 +141,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void create(Users user) {
-        logger.info("Start_Method_create");
-        if (user.isEmpty()) {
-            logger.error("Exception_user_does_not_be_empty!");
-            throw new EntityExistsException();
-        }
-        repository.save(user);
-    }
-
-    @Override
     public void deleteUserByIdAndLogin(Long id, String login) {
         logger.info("Start_Method_deleteUserByIdAndLogin(" + id + ", " + login + ")");
         if (repository.findUserById(id).isPresent()) {
@@ -178,7 +170,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void saveNewUser(Users user) {
-        logger.info("Start_Method_deleteUserByIdAndLogin(user)");
+        logger.info("-Start_Method_deleteUserByIdAndLogin");
+
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSS");
+        String time = LocalDateTime.now().format(format);
+        LocalDate ld = LocalDate.parse(time, format);
+
+        user.setCreatedDate(Timestamp.valueOf(time));
+        user.setAge(ld.getYear() - user.getBirthday().toLocalDate().getYear());
+
         repository.saveUser(user.getLogin(),
                 user.getName(),
                 user.getSurname(),
@@ -187,6 +187,7 @@ public class UserServiceImpl implements UserService {
                 user.getGender(),
                 user.getPhone(),
                 user.getMail(),
+                user.getActivated(),
                 user.getBirthday(),
                 user.getAge(),
                 user.getEnable(),
@@ -195,26 +196,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void saveRoleForUser(Users user) {
-        List<Users> list = repository.findUserByNameAndSurnameAndPatronymic(user.getName(), user.getSurname(), user.getPatronymic());
-        Users targetUser = new Users();
-        for (Users users : list) {
-            if (users.getMail().equals(user.getMail())) {
-                targetUser = users;
-            }
-        }
-        if (user.getRoles().size() == 0) {
-            Roles defaultRole = rolesRepository.findByRoleName("USER");
-            repository.saveRoleForUser(targetUser.getId(), defaultRole.getId());
-        } else {
-            for (Roles role : user.getRoles()) {
-                repository.saveRoleForUser(targetUser.getId(), role.getId());
-            }
+        logger.info("Start_Method_saveRoleForUser");
+        for (Roles role : user.getRoles()) {
+            repository.saveRoleForUser(findUserByLogin(user.getLogin()).getId(), role.getId());
         }
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) {
-        logger.info("Start_Method_loadUserByUsername(" + username + ")");
+        logger.info("Start_Method_loadUserByUsername");
         return repository.findUserByLogin(username).orElseThrow(EntityNotFoundException::new);
+    }
+
+    @Override
+    public Users activated(String code) {
+        Users users = repository.findUserByActivated(code).orElse(new Users());
+        return users;
     }
 }

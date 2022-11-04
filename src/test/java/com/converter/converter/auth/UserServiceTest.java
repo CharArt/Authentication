@@ -158,7 +158,7 @@ public class UserServiceTest {
         builder.setRoles(rolesList);
         UserDTO userDTO = builder.build();
         Users user = new Users(userDTO);
-        service.create(user);
+        service.saveNewUser(user);
         assertEquals(service.findUserByLogin(user.getLogin()).getLogin(), user.getLogin());
     }
 

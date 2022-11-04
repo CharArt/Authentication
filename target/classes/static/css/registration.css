@@ -1,5 +1,5 @@
 .grid-box{
-	grid-template-columns:10% 80% 10%;
+	grid-template-columns:30% 40% 30%;
 	grid-template-rows:10% 80% 10%;
 }
 .middle{
@@ -8,7 +8,7 @@
 }
 
 .footer{
-	font-size:25px;
+	font-size:15px;
 }
 
 .form-grid-container{

@@ -42,7 +42,6 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
                                         Authentication authentication) throws IOException, ServletException {
 
         OAuth2UserImpl oAuth2User = (OAuth2UserImpl) authentication.getPrincipal();
-
         if (!oAuth2User.getEmail().isEmpty()) {
 
             Users users = userService.findUserByMail(oAuth2User.getEmail());
@@ -82,10 +81,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
             }
         }
 
-        oAuth2User.setGoogleUser(googleService.findUserBySub(oAuth2User.getSub()));
-
-        response.sendRedirect("/hello");
-
+        response.sendRedirect("/hello/");
         super.onAuthenticationSuccess(request, response, authentication);
     }
 }

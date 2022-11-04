@@ -1,5 +1,5 @@
 .grid-box{
-	grid-template-columns:5% 90% 5%;
+	grid-template-columns:20% 60% 20%;
 	grid-template-rows:10% 80% 10%;
 }
 .middle{
@@ -9,4 +9,40 @@
 
 .footer{
 	font-size: 25px;
+}
+
+.grid-box-button{
+    height:85%;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    margin:1%
+}
+
+.public-link-box{
+    height:95%;
+    /*border:solid aqua;*/
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:50% 50%%;
+    justify-content: center;
+}
+
+.box-button{
+    height:95%;
+    /*border:solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+
+}
+
+.box-recaptcha{
+    height:95%;
+    /*border:solid orange;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

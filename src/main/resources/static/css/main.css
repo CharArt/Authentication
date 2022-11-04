@@ -4,15 +4,15 @@
  }
  .grid-box{
 	display:grid;
-	height:969px;
+	height: 937px;
 	grid-template-areas: 
-    'headers headers headers'
-    'left middle right' 
+    'headers headers headers '
+    'left  middle  right'
     'footer footer footer';
-	background-color: #FAFAD2;
+    background-color: #FAFAD2;
 }
-
 .left{
+    height:90%;
 	grid-area:left;
 	/*border:solid Navy;*/
 	display:flex;
@@ -21,19 +21,19 @@
 	text-align:center;
 }
 .middle{
+    height:90%;
 	grid-area:middle;
 	/*border:solid Purple;*/
 	display:flex;
 	flex-direction:column;
-	/*justify-content:flex-start;*/
+	justify-content:flex-start;
 	text-align:center;
 	font-family:Calibri, fantasy;
 }
 .right{
+    height:90%;
 	grid-area:right;
 	/*border:solid red;*/
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	text-align:center;
+	display:grid;
+	align-content: center;
 }

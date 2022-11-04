@@ -8,22 +8,20 @@
 	font-size: 25px;
 }
 .field-log{
-	width:60%;
-	background: white;
+	width:90%;
 	display: inline-block;
-	border: solid #ccc;
+	/*border: solid #ccc;*/
 	border-radius: 12px;
 	box-sizing: border-box;
-	margin: 1% 20%;
+	margin: 1% 5%;
 	padding:1%;
 	font-family: Calibri, fantasy;
 	font-size: 80%;
 }
 
 .field-reg{
-	width:60%;
-	height:50%
-	background:white;
+	width:90%;
+	height:40%
 	display:inline-block;
 	border:solid #ccc;
 	border-radius:12px;
@@ -31,25 +29,12 @@
 	margin:1% 5%;
 	padding:1%;
 	font-family:Calibri, fantasy;
-	font-size:80%;
-}
-
-.date-reg{
-	width:60%;
-	background:white;
-	display:inline-block;
-	border:solid #ccc;
-	border-radius:12px;
-	box-sizing:border-box;
-	margin:1% 5%;
-	padding:2.3%;
-	font-family:Calibri, fantasy;
-	font-size:80%;
+	font-size:65%;
 }
 
 .field-search{
 	width:100%;
-	background:white;
+	background-color: white;
 	display:inline-block;
 	border:solid #ccc;
 	border-radius:12px;
@@ -57,4 +42,18 @@
 	padding:1%;
 	font-size:80%;
 	text-align: left;
+}
+
+.field-rerError{
+	width:90%;
+	height:40%
+	display:inline-block;
+	border:solid #ccc;
+	border-radius:12px;
+	box-sizing:border-box;
+	margin:1% 5%;
+	padding:1%;
+	font-family:Calibri, fantasy;
+	font-size:65%;
+	background-color: #FF7F50;
 }

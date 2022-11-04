@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../static/css/login.css" th:href="@{/css/login.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/field.css" th:href="@{/css/field.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/button.css" th:href="@{/css/button.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/footer.css" th:href="@{/css/footer.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/header.css" th:href="@{/css/header.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="/Ch.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="grid-box">
+
+        <div class="headers" th:insert="~{header.html :: header}"></div>
+
+        <div class="left"></div>
+
+        <div class="middle">
+            <form class="form-grid-container" th:object="${user}" action="#" th:action="@{activated/{code}}">
+                <h3 th:text="${user.name + ' ' +  user.patronymic + ' thanks for activated yours email!'}"></h3>
+                <div class="button-layer">
+                    <input class="btn-reg" type="button" id="Back" value="Back" onClick='location.href="http://localhost:8080/login"'>
+                </div>
+            </form>
+        </div>
+        <div class="right"></div>
+
+        <div class="footer" th:insert="~{footer.html :: footer}"></div>
+    </div>
+</body>
+</html>

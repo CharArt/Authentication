@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class JwtTokenFilter extends OncePerRequestFilter {
+public class JwtTokenFilter extends OncePerRequestFilter{
     private final JwtTools tools;
 
     @Autowired
@@ -21,14 +21,13 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        if (request.getServletPath().startsWith("/api/user")) {
-            Authentication authentication = tools.ValidityToken(request);
+        if(request.getServletPath().equals("/api/user/Phone")){
+            Authentication authentication = tools.validityToken(request);
             if (authentication != null) {
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
             filterChain.doFilter(request, response);
-        } else {
-            filterChain.doFilter(request, response);
         }
+        filterChain.doFilter(request, response);
     }
 }

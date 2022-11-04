@@ -1,6 +1,20 @@
 .errors{
-	font-family:Calibri, fantasy;
+    display: grid;
+    /*border:solid blue;*/
+    height:90%;
+    width:90%;
+    margin:5% 5%;
+    align-content: center;
+
+}
+
+.error{
+    font-family:Calibri, fantasy;
 	font-size: 25px;
 	color: red;
-
+	/*border:solid black;*/
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1% 1%;
 }

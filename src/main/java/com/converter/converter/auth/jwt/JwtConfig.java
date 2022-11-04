@@ -33,6 +33,7 @@ public class JwtConfig {
     public String getRefreshTokenHeader() {
         return "Refresh_token";
     }
+
     public String getAuthorizationHeader() {
         return "Authorization";
     }
