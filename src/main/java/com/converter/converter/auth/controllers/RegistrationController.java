@@ -25,7 +25,9 @@ public class RegistrationController {
     private final Logger logger = LoggerFactory.getLogger(RegistrationController.class);
 
     @Autowired
-    public RegistrationController(UserService userService, RoleService roleService, CustomUsersValidator myCustomUserValidation) {
+    public RegistrationController(UserService userService,
+                                  RoleService roleService,
+                                  CustomUsersValidator myCustomUserValidation) {
         this.userService = userService;
         this.roleService = roleService;
         this.myCustomUserValidation = myCustomUserValidation;
@@ -38,28 +40,26 @@ public class RegistrationController {
 
     @GetMapping("/registration")
     public String FrontPage(ModelMap modelMap) {
-        Users newUser = new Users();
+        UserDTO newUser = new UserDTO();
         modelMap.addAttribute("user", newUser);
         return "registration";
     }
 
     @PostMapping("/registration")
-    public String checkUserInfo(@ModelAttribute("user") Users user, BindingResult bindingResult, ModelMap modelMap) {
+    public String checkUserInfo(@ModelAttribute("user") UserDTO user, BindingResult bindingResult, ModelMap modelMap) {
         logger.info("-Start_Method_checkUserInfo");
-
-        user.setActivated(UUID.randomUUID().toString());
-        user.setRoles(roleService.getDefaultRole());
-
         myCustomUserValidation.validate(user, bindingResult);
-
         if (bindingResult.hasErrors()) {
             return "registration";
         }
 
-        userService.saveNewUser(user);
-        userService.saveRoleForUser(user);
-
-        return "redirect:/login";
+        Users users = new Users(user);
+        users.setActivated(UUID.randomUUID().toString());
+        users.setRoles(roleService.getDefaultRole());
+        userService.saveNewUser(users);
+        userService.saveRoleForUser(users);
+        String url = String.format("redirect:/login/%s", users.getActivated());
+        return url;
     }
 
     @GetMapping("activated/{code}")
@@ -67,6 +67,8 @@ public class RegistrationController {
         Users users = userService.activated(code);
         UserDTO userDTO = new UserDTO(users);
         modelMap.addAttribute("user", userDTO);
+        users.setEnable(true);
+        userService.updateUser(users);
         return "activated";
     }
 

@@ -42,4 +42,5 @@ public interface UserService extends UserDetailsService {
     void saveRoleForUser(Users user);
 
     Users activated(String code);
+
 }

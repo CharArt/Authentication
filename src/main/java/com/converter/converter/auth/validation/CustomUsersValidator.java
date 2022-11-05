@@ -1,10 +1,8 @@
 package com.converter.converter.auth.validation;
 
-import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import com.converter.converter.auth.service.MailSender;
 import com.converter.converter.auth.service.UserService;
-import org.apache.catalina.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,22 +29,21 @@ public class CustomUsersValidator implements Validator {
 
     @Override
     public boolean supports(Class<?> aClass) {
-        if (UserDTO.class.equals(aClass)) return true;
-        if (User.class.equals(aClass)) return true;
-//        return Users.class.equals(aClass);
-        return false;
+        logger.info("Start supports");
+        if(UserDTO.class.equals(aClass)){
+            logger.info("Finished well supports");
+            return true;
+        }
+        else {
+            logger.info("Finished bad supports");
+            return false;
+        }
     }
 
     @Override
     public void validate(Object target, Errors errors) {
         logger.info("Start user validator");
-        Users user = new Users();
-        if (target instanceof UserDTO) {
-            UserDTO userDTO = (UserDTO) target;
-            user = new Users(userDTO);
-        } else {
-            user = (Users) target;
-        }
+        UserDTO user = (UserDTO) target;
         validator.checkLogin(user.getLogin(), errors, userService);
         if (validator.checkEmail(user.getMail(), errors, userService)) {
             String message = String.format("Hello, %s Welcome to Currency converter. Please, visit next link: http://localhost:8080/activated/%s",

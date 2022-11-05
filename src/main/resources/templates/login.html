@@ -22,42 +22,49 @@
 
         <div class="headers" th:insert="~{header.html :: header}"></div>
 
-        <div class="left"></div>
+            <div class="left">
+                <form  action="#" th:action="@{login/{code}}" >
+                <h4 class="errors" th:text="${message}"></h4>
+                </form>
+            </div>
 
-        <div class="middle">
-            <h2>Please sign in</h2>
-            <form class="form-grid-container" action="#" th:action="@{/login}" method="post">
+            <div class="middle">
+                <h2>Please sign in</h2>
+                <form  action="#" th:action="@{/login}" method="post">
 
-                <div class="lev25-log">
-                    <label for="username">Login</label>
-                    <input class="field-log" type="text" id="username" name="username" placeholder="Your login..">
-                </div>
-
-                <div class="lev25-log">
-                    <label for="password">Password</label>
-                    <input class="field-log" type="password" id="password" name="password" placeholder="Your password..">
-                </div>
-
-                <div class="grid-box-button">
-                    <div class="box-recaptcha">
-                        <div class="g-recaptcha" data-sitekey="6LedrJwiAAAAAHf14XUPpDvZwhwP4HQg4mo4-E0K"></div>
+                    <div class="lev25-log">
+                        <label for="username">Login</label>
+                        <input class="field-log" type="text" id="username" name="username" placeholder="Your login..">
                     </div>
 
-                    <div class="box-button">
-                        <button class="btn-login" type="submit">Login</button>
-                        <input class="btn-login" type="button" id="Registration" value="Registration"
-                               onClick='location.href="http://localhost:8080/registration"'>
+                    <div class="lev25-log">
+                        <label for="password">Password</label>
+                        <input class="field-log" type="password" id="password" name="password" placeholder="Your password..">
                     </div>
 
-                    <div class="public-link-box">
-                        <p class="button-layer" th:each="url : ${clientUrls}">
-                            <a class="btn-google" id="google" th:href="${url.value}"></a>
-                        </p>
+                    <div class="grid-box-button">
+                        <div class="box-recaptcha">
+                            <div class="g-recaptcha" data-sitekey="6LedrJwiAAAAAHf14XUPpDvZwhwP4HQg4mo4-E0K"></div>
+                        </div>
+
+                        <div class="box-button">
+                            <button class="btn-login" type="submit">Login</button>
+                            <input class="btn-login" type="button" id="Registration" value="Registration"
+                                   onClick='location.href="http://localhost:8080/registration"'>
+                        </div>
+
+                        <div class="public-link-box">
+                            <p class="button-layer" th:each="url : ${clientUrls}">
+                                <a class="btn-google" id="google" th:href="${url.value}"></a>
+                            </p>
+                        </div>
+
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="right"></div>
+
+                 </form>
+            </div>
+
+            <div class="right"></div>
 
         <div class="footer" th:insert="~{footer.html :: footer}"></div>
     </div>

@@ -3,7 +3,7 @@ package com.converter.converter.auth.controllers.rest;
 import com.converter.converter.auth.entity.Users;
 import com.converter.converter.auth.entity.repository.dto.UserDTO;
 import com.converter.converter.auth.service.UserService;
-import com.converter.converter.auth.validation.CustomUserDTOValidator;
+import com.converter.converter.auth.validation.CustomUsersValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,11 +19,11 @@ import java.util.regex.Pattern;
 @RequestMapping("/api/user")
 public class UserRestController {
     private final UserService userService;
-    private final CustomUserDTOValidator validator;
+    private final CustomUsersValidator validator;
 
     @Autowired
     public UserRestController(UserService userService,
-                              CustomUserDTOValidator validator) {
+                              CustomUsersValidator validator) {
         this.userService = userService;
         this.validator = validator;
     }
@@ -142,7 +142,6 @@ public class UserRestController {
             return HttpStatus.BAD_REQUEST;
         }
         Users user = new Users(userDTO);
-
         userService.saveNewUser(user);
         userService.saveRoleForUser(user);
 

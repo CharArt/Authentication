@@ -82,7 +82,7 @@ public class Users implements UserDetails {
         this.mail = user.getMail();
         this.activated = user.getActivated();
         this.birthday = user.getBirthday();
-        this.enable = user.getEnable();
+//        this.enable = user.getEnable();
         this.age = user.getAge();
         this.createdDate = user.getCreatedDate();
 
