@@ -1,0 +1,12 @@
+2022-10-26 17:26:22.181 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12528 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-26 17:26:22.183 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-26 17:26:27.781 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.015 seconds (JVM running for 6.665)
+2022-10-26 17:27:17.136 [http-nio-8080-exec-10] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-10-26 17:27:20.735 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-10-26 17:33:31.424 [http-nio-8080-exec-5] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-10-26 17:33:33.567 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create
+2022-10-26 17:35:02.116 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 908 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-26 17:35:02.117 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-26 17:35:06.969 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.192 seconds (JVM running for 5.771)
+2022-10-26 17:38:44.536 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start user validator
+2022-10-26 17:38:47.506 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_create

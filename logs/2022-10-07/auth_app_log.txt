@@ -1,0 +1,99 @@
+2022-10-07 16:16:54.415 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 17892 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 16:16:54.416 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 16:17:00.971 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.992 seconds (JVM running for 12.906)
+2022-10-07 16:17:09.506 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 16:17:24.785 [http-nio-8080-exec-4] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 16:22:51.156 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 2240 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 16:22:51.157 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 16:22:56.448 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.795 seconds (JVM running for 6.512)
+2022-10-07 16:22:57.050 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 16:23:04.604 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 16:26:32.570 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 4868 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 16:26:32.572 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 16:26:37.343 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 5.126 seconds (JVM running for 5.688)
+2022-10-07 16:26:42.177 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 16:26:49.327 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 19:56:53.687 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 9384 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 19:56:53.687 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 19:56:57.123 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.732 seconds (JVM running for 4.208)
+2022-10-07 20:01:40.031 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 20:04:40.375 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 3732 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 20:04:40.376 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 20:04:43.488 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.415 seconds (JVM running for 3.87)
+2022-10-07 20:05:07.155 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 20:05:15.003 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:05:15.031 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:18:25.939 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20460 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 20:18:25.940 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 20:18:29.071 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.408 seconds (JVM running for 3.929)
+2022-10-07 20:18:45.191 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 20:19:02.402 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:19:02.428 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:19:16.121 [http-nio-8080-exec-4] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:19:16.140 [http-nio-8080-exec-4] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:20:02.043 [http-nio-8080-exec-5] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:20:02.061 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:22:26.103 [http-nio-8080-exec-8] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:22:26.121 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:25:12.272 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16988 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 20:25:12.273 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 20:25:15.499 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.463 seconds (JVM running for 3.842)
+2022-10-07 20:25:25.496 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 20:25:38.502 [http-nio-8080-exec-4] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:25:38.540 [http-nio-8080-exec-4] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:29:26.463 [http-nio-8080-exec-7] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:29:26.492 [http-nio-8080-exec-7] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:30:07.119 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 5288 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 20:30:07.120 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 20:30:09.964 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.068 seconds (JVM running for 3.415)
+2022-10-07 20:31:33.049 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 20:31:42.702 [http-nio-8080-exec-2] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:31:42.739 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 20:58:13.166 [http-nio-8080-exec-5] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 20:58:13.186 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 21:03:32.030 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12444 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:03:32.031 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:03:34.901 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.097 seconds (JVM running for 3.446)
+2022-10-07 21:03:42.443 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:03:49.575 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:03:49.589 [http-nio-8080-exec-3] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten
+2022-10-07 21:04:13.454 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:04:21.831 [http-nio-8080-exec-6] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:04:21.832 [http-nio-8080-exec-6] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten
+2022-10-07 21:05:02.708 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20228 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:05:02.708 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:05:05.776 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.311 seconds (JVM running for 3.664)
+2022-10-07 21:05:12.328 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:05:19.816 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:05:19.829 [http-nio-8080-exec-3] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten
+2022-10-07 21:06:13.778 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 16408 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:06:13.778 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:06:16.840 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.286 seconds (JVM running for 3.633)
+2022-10-07 21:06:20.913 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:06:29.116 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:06:29.154 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 21:08:20.250 [http-nio-8080-exec-6] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:08:20.252 [http-nio-8080-exec-6] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten
+2022-10-07 21:09:00.224 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 12856 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:09:00.225 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:09:03.066 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.072 seconds (JVM running for 3.416)
+2022-10-07 21:11:39.486 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:26:51.784 [http-nio-8080-exec-5] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:26:58.368 [http-nio-8080-exec-6] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:26:58.399 [http-nio-8080-exec-6] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 21:29:27.320 [http-nio-8080-exec-8] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:29:27.341 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 21:30:08.017 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 19068 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:30:08.017 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:30:10.986 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.213 seconds (JVM running for 3.575)
+2022-10-07 21:30:21.086 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:30:27.857 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:30:27.875 [http-nio-8080-exec-3] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten
+2022-10-07 21:31:11.626 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 5572 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-07 21:31:11.627 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-07 21:31:14.682 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.286 seconds (JVM running for 3.644)
+2022-10-07 21:31:26.134 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-10-07 21:31:34.415 [http-nio-8080-exec-3] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:31:34.448 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-10-07 21:35:09.872 [http-nio-8080-exec-6] INFO  com.converter.converter.auth.jwt.JwtTools - Start method ValidityTokenTime
+2022-10-07 21:35:09.874 [http-nio-8080-exec-6] ERROR com.converter.converter.auth.jwt.JwtTools - Method ValidityTokenTime finished with error token is rotten

@@ -1,0 +1,45 @@
+2023-01-04 13:35:21.519 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 10012 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 13:35:21.525 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:00:26.938 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 10172 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 14:00:26.941 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:01:30.029 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 14756 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 14:01:30.031 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:11:03.557 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Starting GoogleUserServiceTest using Java 18.0.1.1 on CharArtPav-Laptop with PID 15732 (started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 14:11:03.557 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:11:13.323 [main] INFO  com.converter.converter.auth.GoogleUserServiceTest - Started GoogleUserServiceTest in 10.175 seconds (JVM running for 12.076)
+2023-01-04 14:11:13.806 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_deleteGoogleUserById(1)
+2023-01-04 14:11:14.015 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:14.081 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserByNameAndSurnameAndEmail(Artoym, Charykov, charartpav@gmail.com)
+2023-01-04 14:11:14.138 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2023-01-04 14:11:14.188 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:14.771 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - -Start_Method_deleteUserByIdAndLogin
+2023-01-04 14:11:14.793 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2023-01-04 14:11:15.116 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByBirthday(1993-02-26)
+2023-01-04 14:11:15.435 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.453 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-12-25 20:58:20.0566667)
+2023-01-04 14:11:15.466 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.471 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.471 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.482 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.522 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artoym,Charykov,Pavlovich)
+2023-01-04 14:11:15.571 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2023-01-04 14:11:15.591 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:15.631 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByGender(male)
+2023-01-04 14:11:15.719 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2023-01-04 14:11:15.771 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2023-01-04 14:11:15.995 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2023-01-04 14:11:16.273 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:16.285 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:16.322 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByAge(29)
+2023-01-04 14:11:16.382 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:16.393 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2023-01-04 14:11:16.430 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:16.434 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2023-01-04 14:11:16.937 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - -Start_Method_deleteUserByIdAndLogin
+2023-01-04 14:11:16.941 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2023-01-04 14:11:16.982 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
+2023-01-04 14:11:39.088 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 19796 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 14:11:39.105 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:26:40.782 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 3572 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2023-01-04 14:26:40.782 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:26:46.747 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.483 seconds (JVM running for 7.168)

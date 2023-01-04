@@ -1,0 +1,11 @@
+2022-09-19 23:34:33.365 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 2952 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-09-19 23:34:33.367 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-19 23:34:51.824 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 18.853 seconds (JVM running for 19.512)
+2022-09-19 23:39:38.198 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 7252 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-09-19 23:39:38.200 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-19 23:39:42.224 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.344 seconds (JVM running for 4.818)
+2022-09-19 23:41:22.425 [http-nio-8080-exec-4] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)
+2022-09-19 23:43:35.571 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 10656 (E:\Project_on_Java\Microservice\authentication\target\classes started by Artem in E:\Project_on_Java\Microservice\authentication)
+2022-09-19 23:43:35.572 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-19 23:43:39.443 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.19 seconds (JVM running for 4.643)
+2022-09-19 23:43:42.296 [http-nio-8080-exec-2] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername(CharArtPav)

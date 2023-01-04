@@ -1,0 +1,20 @@
+2022-12-25 13:35:44.555 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 4744 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-12-25 13:35:44.556 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-25 13:35:50.228 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.185 seconds (JVM running for 8.891)
+2022-12-25 13:36:02.162 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-12-25 13:36:02.314 [http-nio-8080-exec-1] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-12-25 13:36:02.330 [http-nio-8080-exec-1] INFO  c.c.converter.auth.tools.OAuth2LoginSuccessHandler - User first time entered  with google email
+2022-12-25 13:36:02.356 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-12-25 13:36:02.372 [http-nio-8080-exec-1] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_saveNewGoogleUser(1, 112663179165874471763, Artoym, Charykov, charartpav@gmail.com, true, ru)
+2022-12-25 13:36:02.411 [http-nio-8080-exec-1] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-12-25 13:36:02.465 [http-nio-8080-exec-1] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_deleteGoogleUserById(1, 1)
+2022-12-25 23:58:37.732 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18.0.1.1 on CharArtPav-Laptop with PID 17116 (D:\Project_on_Java\Microservice\authentication\target\classes started by Artem in D:\Project_on_Java\Microservice\authentication)
+2022-12-25 23:58:37.734 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-25 23:58:43.879 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.585 seconds (JVM running for 9.474)
+2022-12-25 23:58:47.429 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-12-25 23:58:47.583 [http-nio-8080-exec-3] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-12-25 23:58:47.596 [http-nio-8080-exec-3] INFO  c.c.converter.auth.tools.OAuth2LoginSuccessHandler - User first time entered  with google email
+2022-12-25 23:58:47.623 [http-nio-8080-exec-3] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-12-25 23:58:47.636 [http-nio-8080-exec-3] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_saveNewGoogleUser(1, 112663179165874471763, Artoym, Charykov, charartpav@gmail.com, true, ru)
+2022-12-25 23:58:47.672 [http-nio-8080-exec-3] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-12-25 23:58:47.723 [http-nio-8080-exec-3] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_deleteGoogleUserById(1, 1)
