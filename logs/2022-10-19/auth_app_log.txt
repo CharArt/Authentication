@@ -1,0 +1,3 @@
+2022-10-19 21:51:51.849 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 15632 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-10-19 21:51:51.851 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 21:51:58.280 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 6.874 seconds (JVM running for 7.451)

@@ -1,0 +1,28 @@
+2022-11-19 17:10:49.319 [main] INFO  c.c.converter.auth.AuthenticationApplicationTests - Starting AuthenticationApplicationTests using Java 18 on kftnb-77 with PID 624 (started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-19 17:10:49.320 [main] INFO  c.c.converter.auth.AuthenticationApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-11-19 17:10:53.512 [main] INFO  c.c.converter.auth.AuthenticationApplicationTests - Started AuthenticationApplicationTests in 4.36 seconds (JVM running for 5.187)
+2022-11-19 17:10:53.696 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_deleteGoogleUserById(1)
+2022-11-19 17:10:53.805 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:53.828 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserByNameAndSurnameAndEmail(Artoym, Charykov, charartpav@gmail.com)
+2022-11-19 17:10:53.863 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-11-19 17:10:53.886 [main] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:54.378 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - -Start_Method_deleteUserByIdAndLogin
+2022-11-19 17:10:54.391 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2022-11-19 17:10:54.638 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByBirthday(1993-02-26)
+2022-11-19 17:10:55.105 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByCreated(2022-07-07 00:20:39.1966667)
+2022-11-19 17:10:55.113 [main] ERROR c.converter.converter.auth.service.UserServiceImpl - Exception_user_with_this_parameters_not_exist!
+2022-11-19 17:10:55.134 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByNameAndSurnameAndPatronymic(Artoym,Charykov,Pavlovich)
+2022-11-19 17:10:55.159 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(1, CharArtPav)
+2022-11-19 17:10:55.168 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:55.183 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByGender(male)
+2022-11-19 17:10:55.208 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-19 17:10:55.228 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findAll
+2022-11-19 17:10:55.341 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(CharArtPav)
+2022-11-19 17:10:55.583 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:55.587 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:55.603 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByAge(29)
+2022-11-19 17:10:55.626 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserById(1)
+2022-11-19 17:10:55.629 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_deleteUserByIdAndLogin(user)
+2022-11-19 17:10:56.116 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - -Start_Method_deleteUserByIdAndLogin
+2022-11-19 17:10:56.118 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByLogin(Test2)
+2022-11-19 17:10:56.135 [main] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByEnable(true)
