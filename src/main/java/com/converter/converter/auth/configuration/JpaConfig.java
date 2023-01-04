@@ -23,10 +23,10 @@ import java.util.Properties;
 @EnableTransactionManagement
 @EnableJpaRepositories("com.converter.converter.auth.repository")
 public class JpaConfig {
-    private static final String URL = "jdbc:sqlserver://localhost;DatabaseName=AuthenticationApplication;integratedSecurity=false;" +
-            "encrypt=false;trustServerCertificate=false";
-    private static final String LOGIN = "Artem";
-    private static final String PASSWORD = "1234567";
+    private static final String URL = "jdbc:sqlserver://localhost:1150;DatabaseName=AuthenticationApplication;" +
+                "encrypt=true;integratedSecurity=false;trustServerCertificate=true";
+    private static final String LOGIN = "sa";
+    private static final String PASSWORD = "12Kn0lp1D";
 
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();

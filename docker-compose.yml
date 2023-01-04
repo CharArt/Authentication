@@ -1,0 +1,18 @@
+version: "3"
+services:
+  myserver:
+    image: charartpav/myserver:0.5
+    ports:
+      - "1150:1433"
+    environment:
+      - ACCEPT_EULA:Y
+      - MSSQL_SA_PASSWORD:12Kn0lp1D
+      - MSSQL_AGENT_ENABLED=true
+      - MSSQL_PID=Developer
+
+  authentication:
+    container_name: authentication
+    build:
+      dockerfile: Dockerfile
+    depends_on:
+      - myserver

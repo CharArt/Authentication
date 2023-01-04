@@ -96,8 +96,6 @@ public class SecurityConfig {
                 .apply(new JwtConfiguration(service, config, tools))
                 .and()
                 .httpBasic().authenticationEntryPoint(myBasicAuthEntryPoint);
-//                .and()
-//                .oauth2ResourceServer().jwt();
         return https.build();
     }
 }

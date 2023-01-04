@@ -1,9 +1,11 @@
 package com.converter.converter.auth.controllers.rest;
 
 import com.converter.converter.auth.entity.Users;
+import com.converter.converter.auth.entity.repository.dto.AuthenticationUserDTO;
 import com.converter.converter.auth.jwt.JwtConfig;
 import com.converter.converter.auth.jwt.JwtTools;
 import com.converter.converter.auth.service.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/user/auth")
@@ -38,5 +41,16 @@ public class UserRestAuthorization {
             return new ResponseEntity<String>("200", HttpStatus.OK);
         }
         return new ResponseEntity<String>("Yours token rotten", HttpStatus.BAD_REQUEST);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> loginA(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            AuthenticationUserDTO userDTO = new ObjectMapper().readValue(request.getInputStream(), AuthenticationUserDTO.class);
+        }
+        catch ( IOException e){
+           throw new RuntimeException(e);
+        }
+        return new ResponseEntity<String>("200", HttpStatus.OK);
     }
 }

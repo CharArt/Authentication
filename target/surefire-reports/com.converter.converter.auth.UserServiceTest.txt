@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.converter.converter.auth.UserServiceTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.45 s <<< FAILURE! - in com.converter.converter.auth.UserServiceTest
-saveNewUserTest  Time elapsed: 0.589 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <12> but was: <11>
-	at com.converter.converter.auth.UserServiceTest.saveNewUserTest(UserServiceTest.java:192)
-
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.801 s - in com.converter.converter.auth.UserServiceTest

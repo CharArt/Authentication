@@ -125,10 +125,10 @@ public class UserServiceTest {
 
     @Test
     void findUserByCreatedTest() {
-        List<Users> usersList = service.findUserByCreated(OneUser.getOneUser().getCreatedDate());
+        List<Users> usersList = service.findUserByCreated(service.findUserById(1L).getCreatedDate());
         for (Users users : usersList) {
-            if (users.getCreatedDate().equals(OneUser.getOneUser().getCreatedDate())) {
-                assertEquals(users.getCreatedDate(), OneUser.getOneUser().getCreatedDate());
+            if (users.getCreatedDate().equals(service.findUserById(1L).getCreatedDate())) {
+                assertEquals(users.getCreatedDate(), service.findUserById(1L).getCreatedDate());
             }
         }
     }
@@ -181,11 +181,11 @@ public class UserServiceTest {
 
         Users users = service.findUserById(1L);
         users.setRoles(rolesList);
-        users.setPhone("00000000000");
+        users.setPhone("89001234567");
         service.updateUser(users);
 
         assertEquals(service.findUserById(1L).getRoles().stream().findFirst().get().getRole().toLowerCase(), "user");
-        assertEquals(service.findUserById(1L).getPhone(), "00000000000");
+        assertEquals(service.findUserById(1L).getPhone(), "89001234567");
     }
 
     @Test

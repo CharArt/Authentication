@@ -1,0 +1,33 @@
+2022-11-15 20:55:24.879 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 2736 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-15 20:55:24.880 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-15 20:55:28.692 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 4.094 seconds (JVM running for 4.558)
+2022-11-15 20:56:38.257 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 20:57:02.503 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 20:57:05.364 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - Start supports
+2022-11-15 20:57:05.364 [http-nio-8080-exec-9] INFO  c.c.converter.auth.validation.CustomUsersValidator - Finished well supports
+2022-11-15 20:57:13.718 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-15 20:57:13.744 [http-nio-8080-exec-10] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-11-15 20:57:13.751 [http-nio-8080-exec-10] INFO  c.c.converter.auth.tools.OAuth2LoginSuccessHandler - User first time entered  with google email
+2022-11-15 20:57:13.767 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-15 20:57:13.774 [http-nio-8080-exec-10] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_saveNewGoogleUser(1, 112663179165874471763, Artoym, Charykov, charartpav@gmail.com, true, ru)
+2022-11-15 20:57:13.793 [http-nio-8080-exec-10] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-11-15 20:57:13.819 [http-nio-8080-exec-10] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_deleteGoogleUserById(1, 1)
+2022-11-15 20:57:35.856 [http-nio-8080-exec-8] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_findUserByMail(charartpav@gmail.com)
+2022-11-15 20:57:35.875 [http-nio-8080-exec-8] INFO  c.c.converter.auth.service.GoogleUserServiceImpl - Start_Method_findUserBySub(112663179165874471763)
+2022-11-15 20:57:35.882 [http-nio-8080-exec-8] INFO  c.c.converter.auth.tools.OAuth2LoginSuccessHandler - user already exists!
+2022-11-15 21:00:44.895 [http-nio-8080-exec-9] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 21:02:25.396 [http-nio-8080-exec-10] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 21:09:02.268 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 11344 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-15 21:09:02.269 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-15 21:09:05.465 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.457 seconds (JVM running for 3.826)
+2022-11-15 21:09:20.907 [http-nio-8080-exec-1] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 21:10:22.490 [http-nio-8080-exec-6] INFO  c.converter.converter.auth.service.UserServiceImpl - Start_Method_loadUserByUsername
+2022-11-15 21:33:53.072 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 20660 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-15 21:33:53.073 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-15 21:33:56.393 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.566 seconds (JVM running for 3.921)
+2022-11-15 21:35:16.513 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 14436 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-15 21:35:16.514 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-15 21:35:19.862 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.593 seconds (JVM running for 3.953)
+2022-11-15 21:36:15.022 [main] INFO  c.c.converter.auth.AuthenticationApplication - Starting AuthenticationApplication using Java 18 on kftnb-77 with PID 23440 (C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication\target\classes started by a.charykov in C:\CastOfProjectFolder\Резервная копия\Project_on_Java\Microservice\authentication)
+2022-11-15 21:36:15.022 [main] INFO  c.c.converter.auth.AuthenticationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-15 21:36:18.220 [main] INFO  c.c.converter.auth.AuthenticationApplication - Started AuthenticationApplication in 3.443 seconds (JVM running for 3.796)
